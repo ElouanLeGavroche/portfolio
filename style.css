@@ -71,50 +71,6 @@ h1{
     color: var(--ter-color);
 }
 
-/* la nav bar */
-header {
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 0;
-    transition: top 0.3s ease;
-}
-
-header p {
-    position: absolute;
-    top: 35px;
-    right: 50%;
-    z-index: 999;
-    color: var(--sec-color);
-    font-size: 120%;
-}
-header nav {
-    justify-content: space-between;
-}
-header nav ul {
-    padding: 0;
-    margin: 0;
-}
-header nav li {
-    display: inline-block;
-    padding: 3px;
-    margin: var(--espacement-en-bas-nav) var(--espacement-nav);
-    margin-bottom: 0;
-
-    width: var(--longeur-boutton-nav);
-    background-color: var(--sec-color);
-    transition-duration: 0.4s;
-
-    box-shadow: 2px 2px 1px 1px var(--text-color);    
-}
-
-header nav li:hover{
-    background-color: var(--text-color);
-    color: var(--sec-color);
-    box-shadow: 20px 2px 1px 1px var(--sec-color);
-}
 
 /* Radius des éléments */
 article, li {
@@ -139,8 +95,5 @@ article{
     height: 100%;
 }
 
-/* Images d'article */
-article > figure > img {
-    height: 25%;
-    width: 25%;
-}
+
+
