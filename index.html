@@ -5,13 +5,14 @@
     </head>
 
     <body>
-        <header>
+        <header id = "main-header">
 
-            <h1>Mon portFolio</h1>
+            <h1>ELouan Dhennin</h1>
+            <p>Portfolio</p>
             
             <nav>
                 <ul>
-                    <li>Mon profile</li>
+                    <li>Mon profil</li>
                     <li>Mes projets</li>
                     <li>Mes contacts</li> 
                     <li>GitHub</li>
@@ -21,9 +22,17 @@
         </header>
 
         <main>
+            
             <section>
                 <article>
-                    <h1>Moi</h1>
+                    <h2><u>Ici photo de ma tronche</u></h2>
+                    <figure>
+                        <img src="images/profile.png" 
+                            alt="Photo de profil">
+                        
+                        <figcaption>Moi</figcaption>
+                    </figure>
+                    
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu velit eget 
                         justo euismod tincidunt nec quis lectus. Orci varius natoque penatibus et magnis dis parturient montes, 
@@ -34,7 +43,7 @@
                 </article>
 
                 <article>
-                    <h1>Toi</h1>
+                    <h2><u>Ici texte élogieux</u></h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu velit eget 
                         justo euismod tincidunt nec quis lectus. Orci varius natoque penatibus et magnis dis parturient montes, 
@@ -44,6 +53,19 @@
                     </p>
 
                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu velit eget 
+                        justo euismod tincidunt nec quis lectus. Orci varius natoque penatibus et magnis dis parturient montes, 
+                        nascetur ridiculus mus. Vestibulum sit amet lectus tincidunt, suscipit ante quis, sodales lectus. Ut commodo, 
+                        quam eget egestas posuere, turpis elit hendrerit elit, id ultrices purus sem vel risus. Vivamus id arcu vehicula, 
+                        fermentum nulla nec, accumsan urna. Praesent magna dui, fermentum vitae neque id, bibendum posuere diam.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu velit eget 
+                        justo euismod tincidunt nec quis lectus. Orci varius natoque penatibus et magnis dis parturient montes, 
+                        nascetur ridiculus mus. Vestibulum sit amet lectus tincidunt, suscipit ante quis, sodales lectus. Ut commodo, 
+                        quam eget egestas posuere, turpis elit hendrerit elit, id ultrices purus sem vel risus. Vivamus id arcu vehicula, 
+                        fermentum nulla nec, accumsan urna. Praesent magna dui, fermentum vitae neque id, bibendum posuere diam.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu velit eget 
                         justo euismod tincidunt nec quis lectus. Orci varius natoque penatibus et magnis dis parturient montes, 
                         nascetur ridiculus mus. Vestibulum sit amet lectus tincidunt, suscipit ante quis, sodales lectus. Ut commodo, 
@@ -60,4 +82,27 @@
 
         </footer>
     </body>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.getElementById('main-header');
+      
+        window.addEventListener('scroll', () => {
+          let currentScroll = window.scrollY;
+      
+          if (currentScroll > lastScrollTop && currentScroll > 120) {
+            // Scrolling down, hide header
+            header.style.top = '-100px'; // cache vers le haut
+            header.style.opacity = '0.85'
+          } 
+          else if(currentScroll < lastScrollTop && currentScroll < 120) {
+            // Scrolling up, show header
+            header.style.top = '0';
+            header.style.opacity = '1'
+          }
+      
+          lastScrollTop = currentScroll;
+        });
+      </script>
+      
 </html>
