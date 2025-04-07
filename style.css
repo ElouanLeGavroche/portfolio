@@ -1,0 +1,49 @@
+/* Variables et Couleurs du site */
+:root{
+    --main-color : #038C4C;
+    --sec-color : #BF9A2C;
+    --ter-color : #A6681C;
+    --text-color : #03588C;
+    --add-color : #D9B07E;
+}
+
+
+
+/* Polices du sites */
+@font-face {
+    font-family: 'Quintessential';
+    src: url('./fonts/quintessential/Quintessential-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Lora';
+    src: url('./fonts/lora/Lora-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+
+
+body{
+    font-size: 180%;
+    font-family: 'Lora';
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+main, header, footer{
+    background-color: var(--sec-color);
+}
+
+h1, h2, h3 {
+    font-family: 'Quintessential';    
+}
+
+/* Creation du Header */
+header li {
+    font-size: 1em;
+}
