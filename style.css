@@ -93,7 +93,6 @@ section{
 }
 
 
-
 /* Article */
 article{
     background-color: var(--sec-color);
@@ -104,3 +103,64 @@ article{
 }
 
 
+
+@media (max-width: 1800px){
+    section > article > span {
+        display: inline;
+    }
+
+    article > span > figure {
+        width: 35%;
+    }
+    
+    article > span > p{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1400px){
+
+    section{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    article{
+        width: 100%;
+        margin: 10%;
+        height: 100%;
+        margin-bottom: 1em;
+    }
+
+    img{
+        width: 10px;
+    }
+}
+
+@media (max-width: 1000px){
+    body{
+        margin-top: 5em;
+        font-size: 80%;
+    }
+    header{
+        position:static;
+    }
+
+    
+    header nav li a{
+        font-size: 60%;
+    }
+    header nav li{
+        width: 5em;
+        padding: 1px;
+    }
+}
+
+@media (max-width: 700px){
+
+    #Frise{
+        display: none;
+    }
+
+
+}

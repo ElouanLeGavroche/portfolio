@@ -22,18 +22,3 @@ article > span > p{
 section > article > span {
     display: flex;
 }
-
-
-@media (max-width: 1800px){
-    section > article > span {
-        display: inline;
-    }
-
-    article > span > figure {
-        width: 45%;
-    }
-    
-    article > span > p{
-        width: 100%;
-    }
-}
