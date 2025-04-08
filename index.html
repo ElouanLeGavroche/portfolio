@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="profil.css">
+        <link rel="stylesheet" href="timeline.css">
     </head>
 
     <body>
@@ -14,10 +15,10 @@
             
             <nav>
                 <ul>
-                    <li>Mon profil</li>
-                    <li>Mes projets</li>
-                    <li>Mes contacts</li> 
-                    <li>GitHub</li>
+                    <li><a href="#Profil">Mon profil</a></li>
+                    <li><a href="projets.html">Mes projets</a></li>
+                    <li><a>Mes contacts</a></li> 
+                    <li><a href="https://github.com/ElouanLeGavroche">GitHub</a></li>
                 </ul>
             </nav>
 
@@ -27,7 +28,7 @@
             
             <section>
                 <article>
-                    <h2>Mon profil</h2>
+                    <h2 id="Profil" class="cible">Mon profil</h2>
 
                     <span>
                         <figure>
@@ -47,35 +48,67 @@
                 
 
                 <article>
-                    <h2><u>Ici texte élogieux</u></h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu velit eget 
-                        justo euismod tincidunt nec quis lectus. Orci varius natoque penatibus et magnis dis parturient montes, 
-                        nascetur ridiculus mus. Vestibulum sit amet lectus tincidunt, suscipit ante quis, sodales lectus. Ut commodo, 
-                        quam eget egestas posuere, turpis elit hendrerit elit, id ultrices purus sem vel risus. Vivamus id arcu vehicula, 
-                        fermentum nulla nec, accumsan urna. Praesent magna dui, fermentum vitae neque id, bibendum posuere diam.
-                    </p>
+                    <h2 id="Frise" class="cible">Frise de mes projets</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                          <div class="timeline-marker"></div>
+                          <div class="timeline-content">
+                            <h3>juin 2023</h3>
+                            <p>Prevakia - Premier jeu développé en python avec pygame</p>
+                          </div>
+                        </div>
+                      
+                        <div class="timeline-item">
+                          <div class="timeline-marker"></div>
+                          <div class="timeline-content">
+                            <h3>juin 2024</h3>
+                            <p>Aora -Deuxième jeu</p>
+                          </div>
+                        </div>
+                      
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu velit eget 
-                        justo euismod tincidunt nec quis lectus. Orci varius natoque penatibus et magnis dis parturient montes, 
-                        nascetur ridiculus mus. Vestibulum sit amet lectus tincidunt, suscipit ante quis, sodales lectus. Ut commodo, 
-                        quam eget egestas posuere, turpis elit hendrerit elit, id ultrices purus sem vel risus. Vivamus id arcu vehicula, 
-                        fermentum nulla nec, accumsan urna. Praesent magna dui, fermentum vitae neque id, bibendum posuere diam.
-                    </p>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                              <h3>novembre 2024</h3>
+                              <p>Snake - Développer en C premier projet en BUT</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                              <h3>décembre 2024</h3>
+                              <p>Docker - normalisation de document (text, photo, tableau) a l'aide de script bash et de docker</p>
+                            </div>
+                        </div>
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu velit eget 
-                        justo euismod tincidunt nec quis lectus. Orci varius natoque penatibus et magnis dis parturient montes, 
-                        nascetur ridiculus mus. Vestibulum sit amet lectus tincidunt, suscipit ante quis, sodales lectus. Ut commodo, 
-                        quam eget egestas posuere, turpis elit hendrerit elit, id ultrices purus sem vel risus. Vivamus id arcu vehicula, 
-                        fermentum nulla nec, accumsan urna. Praesent magna dui, fermentum vitae neque id, bibendum posuere diam.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu velit eget 
-                        justo euismod tincidunt nec quis lectus. Orci varius natoque penatibus et magnis dis parturient montes, 
-                        nascetur ridiculus mus. Vestibulum sit amet lectus tincidunt, suscipit ante quis, sodales lectus. Ut commodo, 
-                        quam eget egestas posuere, turpis elit hendrerit elit, id ultrices purus sem vel risus. Vivamus id arcu vehicula, 
-                        fermentum nulla nec, accumsan urna. Praesent magna dui, fermentum vitae neque id, bibendum posuere diam.
-                    </p>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                              <h3>décembre 2024</h3>
+                              <p>Site vitrine des JO - Premier projet web du BUT</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                              <h3>janvier 2025</h3>
+                              <p>Snake CPU - Comme en début d'année, mais le jeu se joue seul grace au CPU</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                              <h3>En cours</h3>
+                              <p>Création d'un moteur 3D avce un jeu de dés sur Opengl en C++</p>
+                            </div>
+                        </div>
+                        
+                        <a href="projets.html">Voir plus de détail</a>
+                      </div>
                 </article>
 
 
@@ -90,7 +123,7 @@
     <script>
         let lastScrollTop = 0;
         const header = document.getElementById('main-header');
-      
+
         window.addEventListener('scroll', () => {
           let currentScroll = window.scrollY;
       
@@ -107,6 +140,7 @@
       
           lastScrollTop = currentScroll;
         });
+        
       </script>
       
 </html>

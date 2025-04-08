@@ -1,8 +1,8 @@
 /* Variables et Couleurs du site */
 :root{
     --main-color : #132f4d;
-    --ter-color : #153B64;
     --sec-color : #B4D8FF;
+    --ter-color : #153B64;
 
     --header-color1 : #95a595;
     --header-color2 : #485c50;
@@ -71,9 +71,17 @@ h1{
     color: var(--ter-color);
 }
 
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.cible{ /* Fait en sorte que tout les lien interne ramène 100px plus bas (prise en compte du header) */
+    scroll-margin-top: 100px;
+}
 
 /* Radius des éléments */
-article, li {
+article, li, article > div > a {
     border-radius: 4px 40px;  
 } 
 
@@ -94,6 +102,5 @@ article{
     width: 45%;
     height: 100%;
 }
-
 
 

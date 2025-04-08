@@ -1,0 +1,39 @@
+.timeline {
+    position: relative;
+    margin: 40px;
+    padding-left: 30px;
+    border-left: 3px solid var(--ter-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: -1.27em;
+}
+
+.timeline-marker {
+    width: 14px;
+    height: 14px;
+    background-color: var(--ter-color);
+    border-radius: 50%;
+    position: absolute;
+    left: -8px; /* centré sur la ligne */
+    top: 0;
+}
+
+.timeline-content {
+    margin-left: 20px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+}
+
+.timeline-content p {
+    margin-left: 25px;
+}
+
+.timeline-content:hover{
+    background-color: var(--text-color);
+    color: var(--sec-color);
+    box-shadow: 20px 2px 1px 1px var(--sec-color);
+}
