@@ -39,6 +39,7 @@
     font-style: normal;
 }
 
+    
 body{
 
     /* initialiser les bodure a 0 */
@@ -50,6 +51,14 @@ body{
     background-color: var(--main-color);
     color: var(--text-color);
     margin-top: 8em;
+    text-align: start;
+}
+
+p{
+    text-align: justify;
+}
+div > p {
+    text-align: start;
 }
 
 header, footer{
@@ -130,5 +139,90 @@ main > article{
     margin: 15%;
 }
 
+/*
+###################
+#                 #
+#                 #
+#     Profil      #
+#                 #
+#                 #
+###################
+*/
+
+article > span > div {
+    width: 30%;
+    height: 35%;
+    margin: 10px;
+}
+
+article > span > p{
+    width: 100%;
+}
+
+section > article > span {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
+
+
+/*
+###################
+#                 #
+#                 #
+#   Format tel    #
+#                 #
+#                 #
+###################
+*/
+
+@media only screen and (max-width: 450px) {
+    body{
+        font-size: 120%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    
+    }
+
+    header{
+        font-size: 60%;
+        width: 100%;
+
+    }
+
+    h1, header p{
+        font-size: 400%;
+    }
+    header p{
+        top: 900px;
+    }
+
+    section{
+        margin: 0;
+        margin-top: 15em;
+        padding: 0;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    article{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    article img{
+        width: 200%;
+    }
+
+    main > article{
+        margin: 0;
+        margin-top: 1em;
+        border-radius: 0;
+    }
+    
+}
