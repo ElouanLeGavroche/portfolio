@@ -183,6 +183,7 @@ section > article > span {
         margin: 0;
         padding: 0;
         width: 100%;
+        padding-top: 15em;
     
     }
 
@@ -201,7 +202,6 @@ section > article > span {
 
     section{
         margin: 0;
-        margin-top: 15em;
         padding: 0;
         width: 100%;
         justify-content: space-around;
@@ -216,7 +216,7 @@ section > article > span {
     }
 
     article img{
-        width: 200%;
+        width: 100%;
     }
 
     main > article{
