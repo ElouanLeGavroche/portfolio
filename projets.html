@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
@@ -23,5 +24,123 @@
             </nav>
 
         </header>
+
+        <main>
+                
+            <article>
+                <h2>Prevakia</h2>
+                <p>
+                    Développer début 2023. Prevakia est mon premier gros projet de jeu avec un 
+                    minimum de sérieux. En effet, en groupe de trois, accompagné de M Toé Joao et de 
+                    M Nicolas Vivien. Nous avons développer en 2 mois et demi un jeu complet.
+                </p>
+
+                <figure>
+                    <img alt="Image d'illustration du jeu" src="images/prevakia/img1.png">
+                    <figcaption>
+                        Gameplay d'infiltration. Eviter de rentrer dans zones
+                        éclairer par les ennemis.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Ci-dessus nous pouvons donc voir un extrait du 3e niveau du jeu.
+                    Eugène (le personnage principale) agripper au plafond, évitant un 
+                    ennemis. Le jeu est un mélange entre Mario et Metroid. A la différence
+                    qu'il est impossible de ce battre sauf a boss final.
+                    Nous pouvons aussi remarquer ici qu'il y a différentes annimation.
+                    En effet, Joao (aujourd'hui en école d'animation a Paris) nous a concocter
+                    de magnifique animation.
+                </p>
+                
+                <figure>
+                    <img alt="Image d'illustration du jeu" src="images/prevakia/img2.png">
+                    <figcaption>
+                        Grappin en action qui attire Eugène au sommet de la pièce
+                    </figcaption>
+                    
+                </figure>
+
+                <p>
+                    Pour parler plus en profondeur du développement, Prevakia est une fiérté
+                    dans le sens où c'est un premier jet de ce que nous aspirons devenir, 
+                    des développeur de jeux. Mais en réalité, je ne suis pas bien fier du programme 
+                    en lui-même. Je déconseillerai de regarder le code. En effet nous avions essayer 
+                    de jouer avec certain paradigmes que nous maîtrisions pas ou peu, tels que les classe
+                    ou la récursivité. C'est alors que le jeu souffre de limitation technique terrible comme
+                    l'absence d'instentiation des objet, et donc l'affichage d'un seul ennemi a la fois.
+                    (sauf pour les projectiles qui ont été développer en fin de projet)
+
+                </p>
+                
+                <figure>
+                    <img alt="Image d'illustration du jeu" src="images/prevakia/img3.png">
+                    <figcaption>
+                        Ici le boss final, contre lequel l'on se bat,
+                        apparaît alors des points de vie pour Eugène comme pour le boss
+                    </figcaption>
+                </figure>
+
+                <p>
+                    + travil de groupe
+                    + réalisation dans les temps
+                    + apprentissage de divers paradigmes
+                </p>
+            </article>
+        
+
+            <article>
+                <h2>Aora</h2>
+                <p>
+                    L'exemple même du projet trop ambicieux ! Encore 3 sur ce projet,
+                    M Toe Joao et M Franzes Matthias. Nous avons appris beaucoup, même
+                    énomément sur ce projet, mais il n'a pas eu de forme final.
+                    En effet nous avons développer un system de génération procédural
+                    basique, nous avons couplé le jeu au multi-threading et développer
+                    un jeu entièrement responsive. Malheureusement, quand nous avions commencé 
+                    le développement pour les IA ennemis il ne restait moins d'une semaine.
+                </p>
+
+                <p>
+                    Malgré tout ce projet à été l'un des meilleur ! Une ambiance de travail agréable
+                    et un trio soudé ! Nous avons laissé fusé nos idées, et bu beaucoup de café.
+                    Nous en sommes fier, car c'était notre projet de terminale, nous savions que ce serai 
+                    le dernier projet avec autant de libérté. Nous avons donc pris la décision de laissé
+                    les idées prendre le dessus sur la faisablilité.
+                </p>
+
+                <p>
+                    + travail de groupe
+                    + recherche et analyse
+                    - réalisation dans les temps
+                </p>
+            </article>
+
+        
+
+            <script>
+                let lastScrollTop = 0;
+                const header = document.getElementById('main-header');
+        
+                window.addEventListener('scroll', () => {
+                  let currentScroll = window.scrollY;
+              
+                  if (currentScroll > lastScrollTop && currentScroll > 120) {
+                    // Scrolling down, hide header
+                    header.style.top = '-100px'; // cache vers le haut
+                    header.style.opacity = '0.85'
+                  } 
+                  else if(currentScroll < lastScrollTop && currentScroll < 120) {
+                    // Scrolling up, show header
+                    header.style.top = '0';
+                    header.style.opacity = '1'
+                  }
+              
+                  lastScrollTop = currentScroll;
+                });
+                
+              </script>
+              
+        </main>
     </body>
 </html>

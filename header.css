@@ -1,6 +1,6 @@
 /* la nav bar */
 header {
-
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
