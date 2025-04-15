@@ -55,10 +55,24 @@
 .timeline-content > img{
     position: absolute;
     left: 10%;
-    width: 70%;
+    width: 30%;
     display: inline-block;
 }
 
+
+.timeline-content:hover #dess{
+    display: inline-block;
+}
+.timeline-content #dess{
+    display: none;
+}
+
+.timeline-content:hover #norm{
+    display: none;
+}
+.timeline-content #norm{
+    display: inline-block;
+}
 
 @media only screen and (max-width: 450px) {
 
