@@ -102,6 +102,7 @@ figcaption{
     left: 50px;
 }
 
+
 .cible{ /* Fait en sorte que tout les lien interne ramène 100px plus bas (prise en compte du header) */
     scroll-margin-top: 200px;
 }
@@ -115,13 +116,15 @@ article, li, article > div > a {
 main > section{
     width: 100%;
     border-radius: 15px;
-    display: flex;
     justify-content: space-between;
-}
-main > section article{
-    width: 80%;
+    display: flex;
 }
 
+main > section > section{
+    flex-wrap: wrap;
+    display:flex;
+    width: 100%;
+}
 
 
 /* Article */
@@ -129,8 +132,11 @@ article{
     background-color: var(--sec-color);
     padding: var(--espacement-commun);
     margin: var(--espacement-commun);
+}
 
-    height: 100%;
+main > section > section article{
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 
@@ -163,9 +169,6 @@ section > article > span {
     display: flex;
     flex-wrap: wrap;
 }
-
-
-
 
 /*
 ###################
@@ -215,7 +218,7 @@ section > article > span {
         border-radius: 0;
     }
 
-    article img{
+    figure > img{
         width: 100%;
     }
 
@@ -224,5 +227,10 @@ section > article > span {
         margin-top: 1em;
         border-radius: 0;
     }
-    
+
+    span > div > img{
+        position: relative;
+        width: 360%;
+    }
+
 }

@@ -1,3 +1,13 @@
+/*
+###################
+#                 #
+#                 #
+#    Time Line    #
+#                 #
+#                 #
+###################
+*/
+
 .timeline {
     position: relative;
     margin: 40px;
@@ -36,4 +46,26 @@
     background-color: var(--text-color);
     color: var(--sec-color);
     box-shadow: 20px 2px 1px 1px var(--sec-color);
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    .timeline {
+        position: relative;
+        margin: 10px;
+        padding-left: 30px;
+        border-left: 3px solid var(--ter-color);
+    }
+
+
+    .timeline-item {
+        margin-left: -1.51em;
+    }
+
+    .timeline-content {
+        margin-left: 10px;
+        padding: 5px 10px;
+    }
+    
 }
