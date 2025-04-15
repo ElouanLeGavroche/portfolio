@@ -91,6 +91,7 @@
     }
 
     .timeline-content {
+        
         padding: 5px 10px;
         height: auto;
 
@@ -99,7 +100,7 @@
         box-shadow: 20px 2px 1px 1px var(--sec-color);
     }
 
-    .timeline-content > img{
+    .timeline-content #norm, .timeline-content #dess{
         display: none;
     }
     
