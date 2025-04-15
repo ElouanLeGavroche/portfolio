@@ -42,7 +42,20 @@
 html{
     margin: 0;
 }
+
+
+.box::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url('images/bg.jpg');
     
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    filter: blur(70px);
+    z-index: -1;
+  }
 body{
 
     /* initialiser les bodure a 0 */
@@ -52,6 +65,7 @@ body{
     font-size: 150%;
     font-family: 'Lora';
     background-color: var(--main-color);
+
     color: var(--text-color);
     margin-top: 8em;
     text-align: start;
@@ -84,7 +98,7 @@ a{
 }
 
 img{
-    width: 100%; 
+    width: 256px; 
     border: 4px solid var(--main-color);
 }
 
@@ -107,12 +121,13 @@ figcaption{
 
 /* Radius des éléments */
 article, li, article > div > a {
-    border-radius: 4px 40px;  
+    border-radius: 4px 40px;
 } 
 
 /* Section */
 main > section{
-    width: 100%;
+    width: 90%;
+    margin: 5%;
     border-radius: 15px;
     justify-content: space-between;
     display: flex;
@@ -120,16 +135,29 @@ main > section{
 
 main > section > section{
     flex-wrap: wrap;
-    display:flex;
-    width: 100%;
+    justify-content:flex-start;
+    width: 80%;
+    margin-right: 5em;
 }
 
 
 /* Article */
-article{
-    background-color: var(--sec-color);
+main article{
+    box-shadow: 0 0 20px #B4D8FFAD;
+    background-color: #B4D8FFB1;
+    
     padding: var(--espacement-commun);
     margin: var(--espacement-commun);
+  
+    backdrop-filter: blur(10);
+
+    transition-duration: 0.2s;
+}  
+
+main article:hover{
+    box-shadow: 0 0 50px #B4D8FFA1;
+    background-color: #B4D8FFB1;
+    backdrop-filter: blur(13px);
 }
 
 main > section > section article{
@@ -228,7 +256,11 @@ section > article > span {
 
     span > div > img{
         position: relative;
-        width: 360%;
+        width: 60%;
+    }
+
+    main > section > article{
+        flex-wrap: wrap;
     }
 
 }

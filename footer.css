@@ -1,6 +1,8 @@
 footer{
     width: 100%;
-    background: linear-gradient(to top, var(--header-color1), 96%, var(--header-color2));
+    /*background: linear-gradient(to top, var(--header-color2), 4%, var(--header-color1));
+    */
+    background-color: #B4D8FF81;
     margin: 0;
 
 }
@@ -10,15 +12,15 @@ footer > section > article > ul, footer > section > article > h4{
 }
 
 footer >section  article{
-    background-color: var(--header-color1);
+    background-color: #0000;
     display: flex;
-    padding: 1em;
-    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    justify-content: space-around;
 }
 
 footer > section{
     padding: 1em;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-around;
     
 }

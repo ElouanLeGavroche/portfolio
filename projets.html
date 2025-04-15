@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <body>
+    <body class="box">
         <header id = "main-header">
 
             <h1>ELouan Dhennin</h1>
@@ -130,12 +130,10 @@
                   if (currentScroll > lastScrollTop && currentScroll > 120) {
                     // Scrolling down, hide header
                     header.style.top = '-100px'; // cache vers le haut
-                    header.style.opacity = '0.85'
                   } 
                   else if(currentScroll < lastScrollTop && currentScroll < 120) {
                     // Scrolling up, show header
                     header.style.top = '0';
-                    header.style.opacity = '1'
                   }
               
                   lastScrollTop = currentScroll;

@@ -36,6 +36,9 @@
     padding: 10px 15px;
     border-radius: 15px;
     transition-duration: 0.2s;
+    position: relative;
+    height: 15em;
+
 }
 
 .timeline-content p {
@@ -46,6 +49,7 @@
     background-color: var(--text-color);
     color: var(--sec-color);
     box-shadow: 20px 2px 1px 1px var(--sec-color);
+    
 }
 
 
@@ -68,4 +72,16 @@
         padding: 5px 10px;
     }
     
+}
+
+.timeline-content > img{
+    position: absolute;
+    left: 10%;
+    display: none;
+}
+
+.timeline-content:hover > img{
+    
+    width: 70%;
+    display: inline-block;
 }

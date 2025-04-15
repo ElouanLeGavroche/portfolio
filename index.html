@@ -12,7 +12,7 @@
         
     </head>
 
-    <body>
+    <body class="box">
         <header id = "main-header">
 
             <h1>ELouan Dhennin</h1>
@@ -52,8 +52,6 @@
 
                 <article id="Contact">
                   <ul>
-                      <li><i>Nom :</i> Dhennin</li>
-                      <li><i>Prenom :</i> Elouan</li>
                       <li><i>Mail :</i> d.elouan@laposte.net</li>
                       <li><i>Mail universitaire :</i> edhennin@univ-rennes.fr</li>
                       <li><i>Téléphone :</i> 07 80 21 23 30</li>
@@ -71,6 +69,7 @@
                         <div class="timeline-content">
                           <h3>juin 2023</h3>
                           <p>Prevakia - Premier jeu développé en python avec pygame</p>
+                          <img alt="Aperçu projet" src="images/prevakia/img1.png">
                         </div>
                       </div>
                     
@@ -174,12 +173,10 @@
           if (currentScroll > lastScrollTop && currentScroll > 120) {
             // Scrolling down, hide header
             header.style.top = '-100px'; // cache vers le haut
-            header.style.opacity = '0.85'
           } 
           else if(currentScroll < lastScrollTop && currentScroll < 120) {
             // Scrolling up, show header
             header.style.top = '0';
-            header.style.opacity = '1'
           }
       
           lastScrollTop = currentScroll;
