@@ -1,3 +1,24 @@
 footer{
     width: 100%;
+    background: linear-gradient(to top, var(--header-color1), 96%, var(--header-color2));
+    margin: 0;
+
+}
+
+footer > section > article > ul, footer > section > article > h4{
+    margin: 0 2em;
+}
+
+footer >section  article{
+    background-color: var(--header-color1);
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+footer > section{
+    padding: 1em;
+    justify-content: space-between;
+    width: 100%;
+    
 }

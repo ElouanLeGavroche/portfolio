@@ -47,3 +47,9 @@ header nav li:hover{
 header nav li:hover a {
     color: var(--sec-color);
 }
+
+header{
+    /*background-color: var(--header-color);*/
+    text-align: center;
+    background: linear-gradient(to top, var(--header-color1), 96%, var(--header-color2));
+}
