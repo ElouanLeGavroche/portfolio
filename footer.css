@@ -24,3 +24,11 @@ footer > section{
     justify-content: space-around;
     
 }
+
+@media only screen and (max-width: 450px) {
+    footer h4, footer ul{
+        display:  none;
+        width: 100%;
+    }
+
+}

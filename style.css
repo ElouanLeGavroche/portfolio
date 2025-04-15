@@ -216,51 +216,34 @@ section > article > span {
     
     }
 
-    header{
-        font-size: 60%;
-        width: 100%;
 
+
+    header li{
+        font-size:  89%;
     }
-
-    h1, header p{
-        font-size: 400%;
+    h1{
+        font-size: 210%;
     }
     header p{
-        top: 900px;
+        top: 13px;
     }
 
-    section{
+    main > section{
+        flex-wrap: wrap;
+        
+    }
+
+    main section, main article, main section section{
+        border-radius: 0;
         margin: 0;
         padding: 0;
         width: 100%;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        flex-direction: column;
     }
 
-    article{
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
+    p, h2{
+        padding: 0.8em;
     }
 
-    figure > img{
-        width: 100%;
-    }
 
-    main > article{
-        margin: 0;
-        margin-top: 1em;
-        border-radius: 0;
-    }
-
-    span > div > img{
-        position: relative;
-        width: 60%;
-    }
-
-    main > section > article{
-        flex-wrap: wrap;
-    }
-
+    
 }
