@@ -171,6 +171,24 @@ main > article{
     margin: 15%;
 }
 
+main > article > section{
+    
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main > article > section > p{
+    width: 80%;
+} 
+main > article > section > figure{
+    width: 50%;
+}
+main > article > section > figure > img{
+    width: 100%;
+}
+
 /*
 ###################
 #                 #

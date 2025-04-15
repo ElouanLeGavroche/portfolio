@@ -33,7 +33,7 @@
 
 .timeline-content {
     margin-left: 20px;
-    width: 100%;
+    width: 80%;
     padding: 10px 15px;
     border-radius: 15px;
     transition-duration: 0.2s;
@@ -58,6 +58,7 @@
     width: 30%;
     display: inline-block;
     border-radius: 15px;
+
 }
 
 
