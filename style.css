@@ -188,6 +188,17 @@ main > article > section > figure{
 main > article > section > figure > img{
     width: 100%;
 }
+main > article > div > img{
+    width: 50%;
+    margin: 1em;
+    height: 100%;
+}
+main > article > div{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    display: flex;
+    margin: 10%;
+}
 
 /*
 ###################
