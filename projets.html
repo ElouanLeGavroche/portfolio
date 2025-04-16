@@ -50,7 +50,7 @@
                     
                     <p>
                         Ci-dessus, un extrait du troisième niveau du jeu. Eugène, le personnage principal, est accroché au plafond pour éviter un ennemi. Le jeu est un mélange entre <em>Mario</em> et <em>Metroid</em>, à la différence qu’il est impossible de se battre, sauf contre le boss final.
-                        On peut également remarquer ici plusieurs animations. Joao (aujourd’hui en école d’animation à Paris) nous a d’ailleurs concocté de magnifiques animations.
+                        On peut également remarquer ici plusieurs animations. Joao (aujourd’hui en école d’animation à Paris) nous a d’ailleurs concocté de magnifiques animations que vous avez vu sur la page principale.
                     </p>
                     
                     <figure>
@@ -77,7 +77,7 @@
                         <strong>Points positifs du projet :</strong><br>
                         + Travail de groupe réussi<br>
                         + Réalisation dans les temps<br>
-                        + Apprentissage de divers paradigmes de programmation
+                        + Découverte de divers paradigmes de programmation
                     </p>
                     
                     
@@ -87,70 +87,60 @@
 
             <article>
                 <h2 id="Aora">Aora</h2>
+
                 <p>
-                    L'exemple même du projet trop ambicieux ! Encore 3 sur ce projet,
-                    M Toe Joao et M Franzes Matthias. Nous avons appris beaucoup, même
-                    énomément sur ce projet, mais il n'a pas eu de forme final.
-                    En effet nous avons développer un system de génération procédural
-                    basique, nous avons couplé le jeu au multi-threading et développer
-                    un jeu entièrement responsive. Malheureusement, quand nous avions commencé 
-                    le développement pour les IA ennemis il nous restait moins d'une semaine.
+                    L’exemple parfait du projet trop ambitieux ! Encore une fois, nous étions trois sur ce projet : M. Toé Joao, M. Franzes Matthias et moi. Ce projet nous a énormément appris, mais il n’a jamais pris de forme finale.
                     <br>
-                    Le projet a été développer comme le précédent, sur pygame avec python.
+                    Nous avions pourtant développé un système de génération procédurale basique, couplé le jeu au multi-threading, et conçu un gameplay entièrement responsive. Malheureusement, lorsque nous avons entamé le développement des IA ennemies, il ne nous restait plus qu'une semaine.
+                    <br>
+                    Le projet a, comme le précédent, été développé avec <strong>Pygame</strong> en Python.
                 </p>
 
                 <p>
-                    Malgré tout, ce projet a été l'un des meilleurs ! Une ambiance de travail agréable
-                    Et un trio soudé ! Nous avons laissé fuser nos idées, et bu beaucoup de café.
-                    Nous en sommes fiers, car c'était notre projet de terminale, nous savions que ce serait 
-                    Le dernier projet avec autant de liberté. Nous avons donc pris la décision de laisser
-                    Les idées prennent le dessus sur la faisabilité.
-                </p>
-
-
-                <p>
-                    Nous avions en premier lieu développer une pièce prototype pour tout nos essaie.
-                    Plusieurs éléments on été développer malgré tout. Par exemple la profondeur,
-                    la génération aléatoire, système de menu et un arbre de tech.
+                    Malgré tout, ce projet reste l’un de mes meilleurs souvenirs ! L’ambiance de travail était top, et notre trio était soudé. Nous avons laissé libre cours à nos idées... et bu beaucoup de café !
                     <br>
-                    Pour la profondeur il a fallut calculer une pseudo hauteur en fonction du block
-                    sur lequel le joueur tombe. Cela donnais alors l'illusion d'un profondeur.
-                    De plus, le joueur étant toujours au centre de l'écran, le rendu a été scyndé en 
-                    deux. partie haute, rendu en premier, ensuite le joueur est dessiner dessus, puis enfin
-                    la partie basse. Voir image si dessous.
-
+                    Nous en sommes fiers, car c’était notre projet de terminale. Nous savions que ce serait probablement notre dernier projet avec autant de liberté. Nous avons donc volontairement privilégié la créativité à la faisabilité.
                 </p>
 
                 <p>
-                    Pour la génération aléatoire, nous avons un peu tricher. En effet, en terminale il 
-                    compliqué de crée ce genre de programme (sauf si c'est l'entièreté du projet), nous
-                    sommes donc partie sur un system de puzzle a plusieurs solutions. 
+                    Nous avions d’abord conçu une pièce prototype pour tous nos essais. Plusieurs éléments ont tout de même été développés, comme :
+                    <ul>
+                        <li>La gestion de la profondeur</li>
+                        <li>La génération aléatoire</li>
+                        <li>Un système de menus</li>
+                        <li>Un arbre de technologies</li>
+                    </ul>
+
+                    Pour la profondeur, nous avons simulé une pseudo-hauteur en fonction du bloc sur lequel le joueur tombait. Cela donnait une illusion de profondeur.
                     <br>
-                    Immaginez un tableau rempli de 0, sur lequel vous mettez de 1 au zones voulu (les 
-                    1 se touche toujours) et vous laissez des 0 par-ci par-là. Une fois fait, vous 
-                    passez a la seconde partie de la génération, vous regardez pour chaque "1" du tableau
-                    les cases adjacentes afin de voir quelles sont les type de salle adapté; exemple :
+                    Le joueur étant toujours centré à l’écran, le rendu était séparé en deux : la partie haute était dessinée en premier, puis le joueur, et enfin la partie basse. (Voir l’image ci-dessous pour mieux comprendre.)
+                </p>
+
+                <p>
+                    Concernant la génération aléatoire, on a un peu triché. En terminale, créer un vrai système procédural est difficile, sauf si c’est le cœur du projet. Nous sommes donc partis sur un système de "puzzle" à plusieurs solutions.
+                    <br>
+                    Imaginez une grille remplie de 0, sur laquelle on place des "1" aux endroits voulus (les "1" sont toujours adjacents). Ensuite, pour chaque "1", on regarde les cases voisines pour déterminer le type de salle à utiliser. Par exemple :
                     <br>
                     <i>
-                        j'ai 3 "1" adjacent a ce "1", je vais donc pioché dans les salles qui ont le labelle
-                        de 3 sortie.
+                        J’ai 3 "1" adjacents à ce "1", donc je pioche dans les salles avec trois sorties.
                     </i>
-                    Et ainsi vous avez un système, certe rudimentaire, mais fonctionnel de génération aléatoire.
                     <br>
-
-                    La limite de cette technique est le temps que prend les salles a faire.
-                    Mais ce modèle peut-être améliorer.
-                    <br>
-                    En effet, nous sommes a l'échèlle de salles, mais il est possible de placer des éléments au sein
-                    de ces pièces, qui répondront à des règles d'apparition. Ainsi nous avons des salles placer aléatoirement
-                    et des éléments de la pièce placer aussi aléatoirement.  
+                    Le résultat est un système simple, mais fonctionnel, de génération procédurale.
                 </p>
 
                 <p>
-                    + travail de groupe
-                    + recherche et analyse
-                    - réalisation dans les temps
+                    La limite de cette méthode, c’est le temps que prend la création des salles. Mais ce modèle peut être amélioré !
+                    <br>
+                    Par exemple, au lieu de placer uniquement des salles, on pourrait aussi intégrer des éléments à l’intérieur de celles-ci, selon des règles d’apparition spécifiques. Cela permettrait d’avoir non seulement une génération aléatoire de la structure, mais aussi du contenu à l’intérieur des pièces.
                 </p>
+
+                <p>
+                    <strong>Points à retenir :</strong><br>
+                    + Travail de groupe efficace<br>
+                    + Recherches et analyses enrichissantes<br>
+                    – Réalisation incomplète, faute de temps
+                </p>
+
             </article>
 
         
