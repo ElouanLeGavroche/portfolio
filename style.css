@@ -188,16 +188,17 @@ main > article > section > figure{
 main > article > section > figure > img{
     width: 100%;
 }
-main > article > div > img{
-    width: 50%;
-    margin: 1em;
+main > article > section > div > img{
+    width: 45%;
     height: 100%;
 }
-main > article > div{
+main > article > section > div{
     justify-content: space-between;
     flex-wrap: nowrap;
     display: flex;
-    margin: 10%;
+    width: 80%;
+    height: 100%;
+    margin: 1em 1em;
 }
 
 /*
@@ -234,7 +235,27 @@ section > article > span {
 #                 #
 ###################
 */
+@media only screen and (max-width: 1300px) {
+    main section, section > section > article, section > article ,article, main > section > section, span{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    section > article > span{
+        display: inline-block;
+    }
 
+    main > section{
+        flex-wrap: wrap;
+    }
+    
+    section > article, main > section > section > article{
+        margin: 1em;
+    }
+
+
+
+}
 @media only screen and (max-width: 450px) {
     body{
         font-size: 120%;

@@ -87,65 +87,66 @@
 
             <article>
                 <h2 id="Aora">Aora</h2>
+                <section>
+                    <p>
+                        L’exemple parfait du projet trop ambitieux ! Encore une fois, nous étions trois sur ce projet : M. Toé Joao, M. Franzes Matthias et moi. Ce projet nous a énormément appris, mais il n’a jamais pris de forme finale.
+                        <br>
+                        Nous avions pourtant développé un système de génération procédurale basique, couplé le jeu au multi-threading, et conçu une fenêtre pleinement responsive. Malheureusement, lorsque nous avons entamé le développement des IA ennemies, il ne nous restait plus qu'une semaine.
+                        <br>
+                        Le projet a, comme le précédent, été développé avec <strong>Pygame</strong> en Python.
+                    </p>
 
-                <p>
-                    L’exemple parfait du projet trop ambitieux ! Encore une fois, nous étions trois sur ce projet : M. Toé Joao, M. Franzes Matthias et moi. Ce projet nous a énormément appris, mais il n’a jamais pris de forme finale.
-                    <br>
-                    Nous avions pourtant développé un système de génération procédurale basique, couplé le jeu au multi-threading, et conçu une fenêtre pleinement responsive. Malheureusement, lorsque nous avons entamé le développement des IA ennemies, il ne nous restait plus qu'une semaine.
-                    <br>
-                    Le projet a, comme le précédent, été développé avec <strong>Pygame</strong> en Python.
-                </p>
+                    <p>
+                        Malgré tout, ce projet reste l’un de mes meilleurs souvenirs ! L’ambiance de travail était top, et notre trio était soudé. Nous avons laissé libre cours à nos idées... et bu beaucoup de café !
+                        <br>
+                        Nous en sommes fiers, car c’était notre projet de terminale. Nous savions que ce serait probablement notre dernier projet avec autant de liberté. Nous avons donc volontairement privilégié la créativité à la faisabilité.
+                    </p>
 
-                <p>
-                    Malgré tout, ce projet reste l’un de mes meilleurs souvenirs ! L’ambiance de travail était top, et notre trio était soudé. Nous avons laissé libre cours à nos idées... et bu beaucoup de café !
-                    <br>
-                    Nous en sommes fiers, car c’était notre projet de terminale. Nous savions que ce serait probablement notre dernier projet avec autant de liberté. Nous avons donc volontairement privilégié la créativité à la faisabilité.
-                </p>
-
-                <p>
-                    Nous avions d’abord conçu une pièce prototype pour tous nos essais. Plusieurs éléments ont tout de même été développés, comme :
+                    <p>
+                        Nous avions d’abord conçu une pièce prototype pour tous nos essais. Plusieurs éléments ont tout de même été développés, comme :
+                    </p>
                     <ul>
                         <li>La gestion de la profondeur</li>
                         <li>La génération aléatoire</li>
                         <li>Un système de menus</li>
                         <li>Un arbre de technologies</li>
                     </ul>
+                    <p>
+                        Pour la profondeur, nous avons simulé une pseudo-hauteur en fonction du bloc sur lequel le joueur tombait. Cela donnait une illusion de profondeur.
+                        <br>
+                        Le joueur étant toujours centré à l’écran, le rendu était séparé en deux : la partie haute était dessinée en premier, puis le joueur, et enfin la partie basse. (Voir l’image ci-dessous pour mieux comprendre.)
+                    </p>
+                    
+                    <div>
+                        <img alt="différentes position du joueur" src="images/Aora/pos_joueur.png">
+                        <img alt="démo rappide, pour visualisé le jeu" src="images/Aora/Démo-1.gif">
+                    </div>
+                    
+                    <p>
+                        Concernant la génération aléatoire, on a un peu triché. En terminale, créer un vrai système procédural est difficile, sauf si c’est le cœur du projet. Nous sommes donc partis sur un système de "puzzle" à plusieurs solutions.
+                        <br>
+                        Imaginez une grille remplie de 0, sur laquelle on place des "1" aux endroits voulus (les "1" sont toujours adjacents). Ensuite, pour chaque "1", on regarde les cases voisines pour déterminer le type de salle à utiliser. Par exemple :
+                        <br>
+                        <i>
+                            J’ai 3 "1" adjacents à ce "1", donc je pioche dans les salles avec trois sorties.
+                        </i>
+                        <br>
+                        Le résultat est un système simple, mais fonctionnel, de génération procédurale.
+                    </p>
 
-                    Pour la profondeur, nous avons simulé une pseudo-hauteur en fonction du bloc sur lequel le joueur tombait. Cela donnait une illusion de profondeur.
-                    <br>
-                    Le joueur étant toujours centré à l’écran, le rendu était séparé en deux : la partie haute était dessinée en premier, puis le joueur, et enfin la partie basse. (Voir l’image ci-dessous pour mieux comprendre.)
-                </p>
-                
-                <div>
-                    <img alt="différentes position du joueur" src="images/Aora/pos_joueur.png">
-                    <img alt="démo rappide, pour visualisé le jeu" src="images/Aora/Démo-1.gif">
-                </div>
-                
-                <p>
-                    Concernant la génération aléatoire, on a un peu triché. En terminale, créer un vrai système procédural est difficile, sauf si c’est le cœur du projet. Nous sommes donc partis sur un système de "puzzle" à plusieurs solutions.
-                    <br>
-                    Imaginez une grille remplie de 0, sur laquelle on place des "1" aux endroits voulus (les "1" sont toujours adjacents). Ensuite, pour chaque "1", on regarde les cases voisines pour déterminer le type de salle à utiliser. Par exemple :
-                    <br>
-                    <i>
-                        J’ai 3 "1" adjacents à ce "1", donc je pioche dans les salles avec trois sorties.
-                    </i>
-                    <br>
-                    Le résultat est un système simple, mais fonctionnel, de génération procédurale.
-                </p>
+                    <p>
+                        La limite de cette méthode, c’est le temps que prend la création des salles. Mais ce modèle peut être amélioré !
+                        <br>
+                        Par exemple, au lieu de placer uniquement des salles, on pourrait aussi intégrer des éléments à l’intérieur de celles-ci, selon des règles d’apparition spécifiques. Cela permettrait d’avoir non seulement une génération aléatoire de la structure, mais aussi du contenu à l’intérieur des pièces.
+                    </p>
 
-                <p>
-                    La limite de cette méthode, c’est le temps que prend la création des salles. Mais ce modèle peut être amélioré !
-                    <br>
-                    Par exemple, au lieu de placer uniquement des salles, on pourrait aussi intégrer des éléments à l’intérieur de celles-ci, selon des règles d’apparition spécifiques. Cela permettrait d’avoir non seulement une génération aléatoire de la structure, mais aussi du contenu à l’intérieur des pièces.
-                </p>
-
-                <p>
-                    <strong>Points à retenir :</strong><br>
-                    + Travail de groupe efficace<br>
-                    + Recherches et analyses enrichissantes<br>
-                    – Réalisation incomplète, faute de temps
-                </p>
-
+                    <p>
+                        <strong>Points à retenir :</strong><br>
+                        + Travail de groupe efficace<br>
+                        + Recherches et analyses enrichissantes<br>
+                        – Réalisation incomplète, faute de temps
+                    </p>
+                </section>
             </article>
 
         
