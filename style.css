@@ -226,6 +226,9 @@ section > article > span {
     flex-wrap: wrap;
 }
 
+li{
+    padding: 0.5em;
+}
 /*
 ###################
 #                 #
@@ -236,22 +239,25 @@ section > article > span {
 ###################
 */
 @media only screen and (max-width: 1300px) {
-    main section, section > section > article, section > article ,article, main > section > section, span{
-        width: 100%;
+
+    section > article{
         margin: 0;
-        padding: 0;
-    }
-    section > article > span{
-        display: inline-block;
+        width: 100%;
     }
 
     main > section{
         flex-wrap: wrap;
     }
-    
+
+    main > section > section:nth-child(1){
+        width: 100%;
+    }
+
     section > article, main > section > section > article{
         margin: 1em;
+        
     }
+
 
 
 
