@@ -201,6 +201,10 @@ main > article > section > div{
     margin: 1em 1em;
 }
 
+main > section > article{
+    width: 40%;
+}
+
 /*
 ###################
 #                 #
@@ -250,6 +254,10 @@ li{
     }
 
     main > section > section:nth-child(1){
+        width: 100%;
+    }
+
+    main > section > article{
         width: 100%;
     }
 
