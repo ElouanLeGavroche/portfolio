@@ -51,6 +51,10 @@
     box-shadow: 20px 2px 1px 1px var(--sec-color);
     
 }
+.timeline-content:hover > img{
+    border: none;
+    
+}
 
 .timeline-content > img{
     position: relative;
