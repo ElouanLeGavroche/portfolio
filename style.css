@@ -267,7 +267,7 @@ main > section > section > article > ul > li{
 
 
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 650px) {
     body{
         font-size: 120%;
         margin: 0;
@@ -293,12 +293,16 @@ main > section > section > article > ul > li{
         flex-wrap: wrap;
         
     }
-
-    main section, main article, main section section{
+    
+    main section, main section section article, main article,main section section{
         border-radius: 0;
         margin: 0;
         padding: 0;
         width: 100%;
+    }
+
+    main section section article{
+        padding: 0.5em;
     }
 
     p, h2{
