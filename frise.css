@@ -46,9 +46,9 @@
 }
 
 .timeline-content:hover{
-    background-color: var(--text-color);
+    background-color: var(--ter-color);
     color: var(--sec-color);
-    box-shadow: 20px 2px 1px 1px var(--sec-color);
+    box-shadow: 10px 10px 1px 1px var(--text-color);
     
 }
 .timeline-content:hover > img{

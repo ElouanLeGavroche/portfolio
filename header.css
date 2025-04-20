@@ -62,15 +62,19 @@ header::before{
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-color: var(--header-color1);
     background-image:  url('images/img_bg_header_2.jpg');
-    background-size: cover;
-    background-position: center;
     opacity: 1;
     transition: opacity 1s ease;
     z-index: -1; /* derrière le contenu du header */
-    filter: blur(10px);
+    background-position-y: 10%;
+    background-size: 105%;
+    filter: blur(5px);
 }
+/*
+header:hover::before{
+    background-position-y: 85%;
+}
+*/
 
 #main-header.fade-bg::before {
     opacity: 0;

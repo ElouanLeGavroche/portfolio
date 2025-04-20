@@ -48,12 +48,12 @@ html{
     content: "";
     position: fixed;
     inset: 0;
-    background-image: url('images/bg.jpg');
-    
+    /*background-image: url('images/bg.jpg');*/
+    background-color: var(--main-color);
     background-size:cover;
     background-repeat: no-repeat;
 
-    filter: blur(70px);
+    filter: blur(20px);
     z-index: -1;
   }
 body{
@@ -143,20 +143,17 @@ main > section > section{
 
 /* Article */
 main article{
-    box-shadow: 0 0 20px #B4D8FFAD;
-    background-color: #B4D8FFB1;
+    box-shadow: 0 0 20px var(--sec-color);
+    background-color: #B4D8FF;
     
     padding: var(--espacement-commun);
     margin: var(--espacement-commun);
   
-    backdrop-filter: blur(10);
-
     transition-duration: 0.2s;
 }  
 
 main article:hover{
-    box-shadow: 0 0 50px #B4D8FFA1;
-    background-color: #B4D8FFB1;
+    box-shadow: 0 0 30px #B4D8FF;
     backdrop-filter: blur(13px);
 }
 
