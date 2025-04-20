@@ -2,7 +2,7 @@ footer{
     width: 100%;
     /*background: linear-gradient(to top, var(--header-color2), 4%, var(--header-color1));
     */
-    background-color: #B4D8FF81;
+    background-color: #B4D8FF;
     margin: 0;
 
 }
@@ -12,7 +12,6 @@ footer > section > article > ul, footer > section > article > h4{
 }
 
 footer >section  article{
-    background-color: #0000;
     display: flex;
     width: 100%;
     margin: 0;
