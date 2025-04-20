@@ -63,7 +63,7 @@ header::before{
     top: 0; left: 0;
     width: 100%; height: 100%;
     background-color: var(--header-color1);
-    background-image: url('images/header_video.gif');
+    background-image: url('images/header_video-1.gif');
     background-size: cover;
     background-position: center;
     opacity: 1;
