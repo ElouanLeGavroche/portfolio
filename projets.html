@@ -21,7 +21,7 @@
             
             <nav>
                 <ul>
-                    <li><a href="index.html#Profil">Mon profil</a></li>
+                    <li><a href="index.html">Mon profil</a></li>
                     <li><a href="index.html#Frise">Mes projets</a></li>
                     <li><a href="index.html#Contact">Mes contacts</a></li> 
                     <li><a href="https://github.com/ElouanLeGavroche">GitHub</a></li>
@@ -154,22 +154,37 @@
             <script>
                 let lastScrollTop = 0;
                 const header = document.getElementById('main-header');
-        
+                
+                // Fondu du background-image uniquement
+                function fadeOutHeaderBackground() {
+                header.classList.add('fade-bg');
+                header.classList.remove('fade-bg-in');
+                header.classList.add('new-bg');
+                }
+                function fadeInHeaderBackground() {
+                header.classList.add('fade-bg-in');
+                header.classList.remove('fade-bg');
+                }
+
                 window.addEventListener('scroll', () => {
-                  let currentScroll = window.scrollY;
-              
-                  if (currentScroll > lastScrollTop && currentScroll > 120) {
+                let currentScroll = window.scrollY;
+            
+                if (currentScroll > lastScrollTop && currentScroll > 10) {
                     // Scrolling down, hide header
                     header.style.top = '-100px'; // cache vers le haut
-                  } 
-                  else if(currentScroll < lastScrollTop && currentScroll < 120) {
+                    setTimeout(fadeOutHeaderBackground, 10);
+                } 
+
+                else if(currentScroll < lastScrollTop && currentScroll < 10) {
                     // Scrolling up, show header
                     header.style.top = '0';
-                  }
-              
-                  lastScrollTop = currentScroll;
+                    setTimeout(fadeInHeaderBackground, 10);
+                }
+
+            
+                lastScrollTop = currentScroll;
                 });
-                
+
               </script>
               
         </main>

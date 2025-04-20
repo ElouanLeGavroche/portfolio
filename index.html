@@ -26,7 +26,7 @@
     </head>
 
     <body class="box">
-        <header id = "main-header">
+        <header id = "main-header" class="box2">
 
             <h1>Elouan Dhennin</h1>
             <p>Portfolio</p>
@@ -102,6 +102,18 @@
                       <li><i>Mon Linkedin : </i><a href="https://www.linkedin.com/in/elouan-dhennin-b1182a358/">Ouvrir le lien</a></li>
                   
                   </ul>
+                </article>
+                
+                <article>
+                  <h2>Projets annexes</h2>
+                  
+                  <div>
+                    <h3>Mise en place du serveur sur lequel est héberger ce site</h3>
+                  </div>
+
+                  <div>
+                    <h3>Création d'une application d'automatisation de tâches redondantes pour mon père</h3> 
+                  </div>
                 </article>
               </section>
 
@@ -218,22 +230,37 @@
     <script>
         let lastScrollTop = 0;
         const header = document.getElementById('main-header');
+        
+        // Fondu du background-image uniquement
+        function fadeOutHeaderBackground() {
+          header.classList.add('fade-bg');
+          header.classList.remove('fade-bg-in');
+          header.classList.add('new-bg');
+        }
+        function fadeInHeaderBackground() {
+          header.classList.add('fade-bg-in');
+          header.classList.remove('fade-bg');
+        }
 
         window.addEventListener('scroll', () => {
           let currentScroll = window.scrollY;
       
-          if (currentScroll > lastScrollTop && currentScroll > 120) {
+          if (currentScroll > lastScrollTop && currentScroll > 10) {
             // Scrolling down, hide header
             header.style.top = '-100px'; // cache vers le haut
+            setTimeout(fadeOutHeaderBackground, 10);
           } 
-          else if(currentScroll < lastScrollTop && currentScroll < 120) {
+
+          else if(currentScroll < lastScrollTop && currentScroll < 10) {
             // Scrolling up, show header
             header.style.top = '0';
+            setTimeout(fadeInHeaderBackground, 10);
           }
+
       
           lastScrollTop = currentScroll;
         });
-        
+
       </script>
       
 </html>
