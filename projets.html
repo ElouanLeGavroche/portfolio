@@ -105,12 +105,19 @@
                     <p>
                         Nous avions d’abord conçu une pièce prototype pour tous nos essais. Plusieurs éléments ont tout de même été développés, comme :
                     </p>
+                </section>
+                
+                <div>
                     <ul>
                         <li>La gestion de la profondeur</li>
                         <li>La génération aléatoire</li>
                         <li>Un système de menus</li>
                         <li>Un arbre de technologies</li>
                     </ul>
+                </div>
+                
+                
+                <section>
                     <p>
                         Pour la profondeur, nous avons simulé une pseudo-hauteur en fonction du bloc sur lequel le joueur tombait. Cela donnait une illusion de profondeur.
                         <br>
@@ -150,42 +157,75 @@
 
             </article>
 
-            <article>
+            <article id="Snake">
                 <h2>Jeu de snake</h2>
+                <section>
+                    <p>
+                        Premier de projet de développement à L'IUT, en solo. Nous avons crée deux jeux de Snake. Le premier, était le jeu que tout le monde connais,
+                        a la différence qu'il y avait des obstacle comme si-dessous. Nous l'avons développer en début d'année scolaire 2024.
+                        Celui-ci a été coder en C avec aucune interface graphique (ormi le terminale). 
+                        <br>
+                        Le projet n'est pas forcément le plus dur que nous avons eu a faire, mais il restait très intérssant.
+                        En effet, nous avons appris a coder de manière plus proffessionel, plus de commentaire, mise en page selon les convensions
+                        et surtout une documentation doxygen.
+
+                    </p>
+                    
+                    <div>
+                        <img alt="image du jeu" src="images/Snake/snakev3.png">
+                        <img alt="autre image du jeu" src="images/Snake/snakev3_2.png">
+                    </div>
+                    
+                    <p>
+                        Le second snake que nous avons eu a développer était autonome. Nous étions cette fois-ci en binome, et la nouvelle mission était
+                    </p>
+                </section>
             </article>
+
+            <aside id="aside-projets">
+                <h3>Liste</h3>
+                <ul>
+                    <li><a href="#Prevakia">Prevakia</a></li>
+                    <li><a href="#Aora">Aora</a></li>
+                    <li><a href="#Snake">Snake</a></li>
+                </ul>
+            </aside>
 
             <script>
                 let lastScrollTop = 0;
                 const header = document.getElementById('main-header');
-                
+                const aside = document.getElementById('aside-projets');
+
                 // Fondu du background-image uniquement
                 function fadeOutHeaderBackground() {
-                header.classList.add('fade-bg');
-                header.classList.remove('fade-bg-in');
-                header.classList.add('new-bg');
+                    header.classList.add('fade-bg');
+                    header.classList.remove('fade-bg-in');
+                    header.classList.add('new-bg');
                 }
                 function fadeInHeaderBackground() {
-                header.classList.add('fade-bg-in');
-                header.classList.remove('fade-bg');
+                    header.classList.add('fade-bg-in');
+                    header.classList.remove('fade-bg');
                 }
 
                 window.addEventListener('scroll', () => {
-                let currentScroll = window.scrollY;
-            
-                if (currentScroll > lastScrollTop && currentScroll > 10) {
-                    // Scrolling down, hide header
-                    header.style.top = '-100px'; // cache vers le haut
-                    setTimeout(fadeOutHeaderBackground, 10);
-                } 
+                    let currentScroll = window.scrollY;
+                
+                    if (currentScroll > lastScrollTop && currentScroll > 10) {
+                        // Scrolling down, hide header
+                        header.style.top = '-100px'; // cache vers le haut
+                        setTimeout(fadeOutHeaderBackground, 10);
+                        aside.style.top = "5em";
+                    } 
 
-                else if(currentScroll < lastScrollTop && currentScroll < 10) {
-                    // Scrolling up, show header
-                    header.style.top = '0';
-                    setTimeout(fadeInHeaderBackground, 10);
-                }
+                    else if(currentScroll < lastScrollTop && currentScroll < 10) {
+                        // Scrolling up, show header
+                        header.style.top = '0';
+                        setTimeout(fadeInHeaderBackground, 10);
+                        aside.style.top = "12em";
+                    }
 
-            
-                lastScrollTop = currentScroll;
+                
+                    lastScrollTop = currentScroll;
                 });
 
               </script>

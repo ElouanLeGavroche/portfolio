@@ -165,7 +165,7 @@ main > section > section article{
 
 /* Article pour la pages des projets*/
 main > article{
-    margin: 15%;
+    margin: 12em 4em 0% 25%;
 }
 
 main > article > section{
@@ -196,6 +196,10 @@ main > article > section > div{
     width: 80%;
     height: 100%;
     margin: 1em 1em;
+}
+
+main > article > div{
+    margin: 0 15%;
 }
 
 main > section > article{
@@ -230,6 +234,28 @@ section > article > span {
 main > section > section > article > ul > li{
     padding: 0.5em;
 }
+/*
+###################
+#                 #
+#                 #
+#      Aside      #
+#                 #
+#                 #
+###################
+*/
+aside{
+    
+    background-color: var(--sec-color);
+    padding: 0.5em;
+    top: 12em;
+    position: fixed;
+    width: 20%;
+    z-index: 1;
+    transition-duration: 0.2s;
+
+}
+
+
 /*
 ###################
 #                 #
