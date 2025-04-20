@@ -230,7 +230,7 @@ section > article > span {
     flex-wrap: wrap;
 }
 
-li{
+main > section > section > article > ul > li{
     padding: 0.5em;
 }
 /*

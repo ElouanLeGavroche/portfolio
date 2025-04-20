@@ -63,12 +63,13 @@ header::before{
     top: 0; left: 0;
     width: 100%; height: 100%;
     background-color: var(--header-color1);
-    background-image: url('images/header_video-1.gif');
+    background-image:  url('images/img_bg_header_2.jpg');
     background-size: cover;
     background-position: center;
     opacity: 1;
     transition: opacity 1s ease;
     z-index: -1; /* derrière le contenu du header */
+    filter: blur(10px);
 }
 
 #main-header.fade-bg::before {
@@ -76,7 +77,20 @@ header::before{
   }
 #main-header.fade-bg-in::before {
     opacity: 1;
+
   }
 #main-header.new-bg{
-    background-color: var(--header-color2);
+    background-color: black;
+    background-image: url(images/header_video-1.gif);
+    background-position-y: -90px;
+    background-position-x: 10%;
+    background-repeat: no-repeat;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    #main-header.new-bg{
+        background-image: none;
+    }
+    
 }
