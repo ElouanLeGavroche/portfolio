@@ -1,13 +1,13 @@
 /* Variables et Couleurs du site */
 :root{
-    --main-color : #132f4d;
-    --sec-color : #B4D8FF;
-    --ter-color : #153B64;
+    --main-color : #f3efe0 ;
+    --sec-color : #d1c7b7 ;
+    --ter-color : #6b705c ;
 
     --header-color1 : #95a595;
     --header-color2 : #485c50;
     
-    --text-color : #16273A;
+    --text-color : #3c3c3c;
 
     --espacement-nav : 1em;
     --espacement-en-bas-nav : 1.4em;
@@ -62,12 +62,12 @@ body{
     margin: 0;
     padding: 0;
 
-    font-size: 150%;
+    font-size: 120%;
     font-family: 'Lora';
     background-color: var(--main-color);
 
     color: var(--text-color);
-    margin-top: 8em;
+    margin-top: 12em;
     text-align: start;
 }
 
@@ -89,7 +89,7 @@ h2{
 }
 
 h1{
-    color: var(--ter-color);
+    color: var(--text-color);
 }
 
 a{
@@ -99,7 +99,6 @@ a{
 
 img{
     width: 256px; 
-    border: 4px solid var(--main-color);
 }
 
 figure img{
@@ -117,6 +116,10 @@ figcaption{
 
 .cible{ /* Fait en sorte que tout les lien interne ramène 100px plus bas (prise en compte du header) */
     scroll-margin-top: 200px;
+}
+
+li{
+    margin: 0.7em;
 }
 
 /* Radius des éléments */
@@ -144,7 +147,7 @@ main > section > section{
 /* Article */
 main article{
     box-shadow: 0 0 20px var(--sec-color);
-    background-color: #B4D8FF;
+    background-color: var(--sec-color);
     
     padding: var(--espacement-commun);
     margin: var(--espacement-commun);
@@ -153,7 +156,7 @@ main article{
 }  
 
 main article:hover{
-    box-shadow: 0 0 30px #B4D8FF;
+    box-shadow: 0 0 30px var(--ter-color);
     backdrop-filter: blur(13px);
 }
 
@@ -174,6 +177,7 @@ main > article > section{
     text-align: left;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 main > article > section > p{
@@ -247,7 +251,7 @@ aside{
     
     background-color: var(--sec-color);
     padding: 0.5em;
-    top: 12em;
+    top: 14em;
     position: fixed;
     width: 20%;
     z-index: 1;

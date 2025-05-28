@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="profil.css">
-        <link rel="stylesheet" href="timeline.css">
+        <link rel="stylesheet" href="footer.css">
     
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -216,14 +216,14 @@
                         // Scrolling down, hide header
                         header.style.top = '-100px'; // cache vers le haut
                         setTimeout(fadeOutHeaderBackground, 10);
-                        aside.style.top = "5em";
+                        aside.style.top = "7em";
                     } 
 
                     else if(currentScroll < lastScrollTop && currentScroll < 10) {
                         // Scrolling up, show header
                         header.style.top = '0';
                         setTimeout(fadeInHeaderBackground, 10);
-                        aside.style.top = "12em";
+                        aside.style.top = "13em";
                     }
 
                 
@@ -233,5 +233,34 @@
               </script>
               
         </main>
+
+        <footer>   
+          
+            <section>
+                <article>
+                <h4>Portfolio Elouan Dhennin 2024-2025</h4>
+                <h4>Configuration du hardware</h4>
+                </article>
+
+                <article>
+                <section>
+                    
+                    <p>Héberger sur un serveur fait maison</p>
+                    <p>En développement - dernière mise à jour le : 19/04/2025 à 15h</p>
+                    <p>Dans le cadre de ma formation BUT informatique</p>
+                </section>
+
+                <ul>
+                    <li>CPU : Atlhon 64x2 4000+</li>
+                    <li>GPU : Radeon x1550</li>
+                    <li>RAM : 2*3GB DDR2 667Mhz</li>
+                    <li>DISK : 240GB 5400RPM</li>
+                </ul>
+
+                
+                </section>            
+            </article>
+
+        </footer>
     </body>
 </html>

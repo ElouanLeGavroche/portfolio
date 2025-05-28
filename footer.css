@@ -2,8 +2,9 @@ footer{
     width: 100%;
     /*background: linear-gradient(to top, var(--header-color2), 4%, var(--header-color1));
     */
-    background-color: #B4D8FF;
+    background-color: var(--sec-color);
     margin: 0;
+    margin-top: 4em;
 
 }
 
