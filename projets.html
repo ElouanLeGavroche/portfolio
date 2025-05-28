@@ -190,6 +190,11 @@
                     <li><a href="#Prevakia">Prevakia</a></li>
                     <li><a href="#Aora">Aora</a></li>
                     <li><a href="#Snake">Snake</a></li>
+                    <li><a href="#Snake">Docker</a></li>
+                    <li><a href="#Snake">Site Jo</a></li>
+                    <li><a href="#Snake">Base de donnée</a></li>
+                    <li><a href="#Snake">Application Java</a></li>
+                    <li><a href="#Snake">Moteur 3D</a></li>
                 </ul>
             </aside>
 
@@ -207,14 +212,16 @@
                 function fadeInHeaderBackground() {
                     header.classList.add('fade-bg-in');
                     header.classList.remove('fade-bg');
+                    header.classList.remove('new-bg');
                 }
 
                 window.addEventListener('scroll', () => {
                     let currentScroll = window.scrollY;
                 
+
                     if (currentScroll > lastScrollTop && currentScroll > 10) {
                         // Scrolling down, hide header
-                        header.style.top = '-100px'; // cache vers le haut
+                        header.style.top = '-90px'; // cache vers le haut
                         setTimeout(fadeOutHeaderBackground, 10);
                         aside.style.top = "7em";
                     } 
@@ -223,8 +230,20 @@
                         // Scrolling up, show header
                         header.style.top = '0';
                         setTimeout(fadeInHeaderBackground, 10);
-                        aside.style.top = "13em";
+                        aside.style.top = "12em";
                     }
+
+                    if (currentScroll > lastScrollTop && currentScroll >= 4900) {
+                        // Scrolling down, hide header
+                        aside.style.height = "40%";
+                    } 
+
+                    else if (currentScroll < lastScrollTop && currentScroll < 4900) {
+                        // Scrolling down, hide header
+                        aside.style.height = "80%";
+                    } 
+
+                    
 
                 
                     lastScrollTop = currentScroll;

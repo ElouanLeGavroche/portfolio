@@ -48,7 +48,7 @@ html{
     content: "";
     position: fixed;
     inset: 0;
-    /*background-image: url('images/bg.jpg');*/
+    background-image: url('images/bg.jpg');
     background-color: var(--main-color);
     background-size:cover;
     background-repeat: no-repeat;
@@ -168,7 +168,7 @@ main > section > section article{
 
 /* Article pour la pages des projets*/
 main > article{
-    margin: 12em 4em 0% 25%;
+    margin: 7em 4em 0% 25%;
 }
 
 main > article > section{
@@ -249,11 +249,12 @@ main > section > section > article > ul > li{
 */
 aside{
     
-    background-color: var(--sec-color);
+    background-color: var(--main-color);
     padding: 0.5em;
-    top: 14em;
+    top: 12em;
     position: fixed;
     width: 20%;
+    height: 80%;
     z-index: 1;
     transition-duration: 0.2s;
 
