@@ -165,6 +165,17 @@ main > section > section article{
     flex-wrap: wrap;
 }
 
+/* Projet annexe */
+.PA h2{
+    margin: 2em;
+    text-align: left;
+}
+.PA{
+    text-align: center;
+}
+main > section > section > .PA > div > img{
+    width: 80%;
+}
 
 /* Article pour la pages des projets*/
 main > article{
@@ -249,7 +260,7 @@ main > section > section > article > ul > li{
 */
 aside{
     
-    background-color: var(--main-color);
+    background-color: var(--sec-color);
     padding: 0.5em;
     top: 12em;
     position: fixed;

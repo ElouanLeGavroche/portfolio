@@ -104,16 +104,31 @@
                   </ul>
                 </article>
                 
-                <article>
-                  <h2>Projets annexes</h2>
-                  
-                  <div>
-                    <h3>Mise en place du serveur sur lequel est héberger ce site</h3>
-                  </div>
+                <article class="PA">
+                  <h2>Mise en place du serveur sur lequel est héberger ce site</h2>
 
                   <div>
-                    <h3>Création d'une application d'automatisation de tâches redondantes pour mon père</h3> 
+                    
+                    <img src="images/IMG_20250607_134625.jpg" alt="Image de l'ordinateur">
+                    <p>
+                      Initiallement installé sur le vielle ordinateur montrer ci-dessus. J'ai préféré opté pour un raspeberry.
+                      Le premier était donc un ordinateur sous lubuntu surlequel j'ai configuré nxing pour y héberger mon site.
+                      Mais entre la consomation élétrique et le bruit, j'ai finalement changé. Le raspeberry est quant à lui
+                      sous raspeberryOs, et utilise apache2. J'y ai d'ailleurs aussi configuré php dans le cadre d'un projet
+                      réseau de l'IUT.
+                    </p>
+
+                    <img src="images/IMG_20250607_134645.jpg" alt="Image du raspeberry">
+                    <p>
+                      En premier lieu, pour rendre l'ordinateur publique, il a fallut ouvrir le port 80 de ma box.
+                      Il suffit d'accéder à la page de controle de celle-ci et de configurer des adresse statique pour 
+                      pour les conserver dans le temps, et des ports ouvert à l'exterieur, comme le port 80 ou 443.
+                      Pour l'hébergement je me suis procurer un nom de demaine grace à OVH, dans lequel j'ai renseigner
+                      l'adresse publique de l'ordinateur.
+
+                    </p>
                   </div>
+
                 </article>
               </section>
 
@@ -237,40 +252,57 @@
         </footer>
     </body>
 
-    <script>
-        let lastScrollTop = 0;
-        const header = document.getElementById('main-header');
-        
-        // Fondu du background-image uniquement
-        function fadeOutHeaderBackground() {
-          header.classList.add('fade-bg');
-          header.classList.remove('fade-bg-in');
-          header.classList.add('new-bg');
-        }
-        function fadeInHeaderBackground() {
-          header.classList.add('fade-bg-in');
-          header.classList.remove('fade-bg');
-        }
+<script>
+                let lastScrollTop = 0;
+                const header = document.getElementById('main-header');
+                const aside = document.getElementById('aside-projets');
 
-        window.addEventListener('scroll', () => {
-          let currentScroll = window.scrollY;
-      
-          if (currentScroll > lastScrollTop && currentScroll > 10) {
-            // Scrolling down, hide header
-            header.style.top = '-90px'; // cache vers le haut
-            setTimeout(fadeOutHeaderBackground, 10);
-          } 
+                // Fondu du background-image uniquement
+                function fadeOutHeaderBackground() {
+                    header.classList.add('fade-bg');
+                    header.classList.remove('fade-bg-in');
+                    header.classList.add('new-bg');
+                }
+                function fadeInHeaderBackground() {
+                    header.classList.add('fade-bg-in');
+                    header.classList.remove('fade-bg');
+                    header.classList.remove('new-bg');
+                }
 
-          else if(currentScroll < lastScrollTop && currentScroll < 10) {
-            // Scrolling up, show header
-            header.style.top = '0';
-            setTimeout(fadeInHeaderBackground, 10);
-          }
+                window.addEventListener('scroll', () => {
+                    let currentScroll = window.scrollY;
+                
 
-          lastScrollTop = currentScroll;
-        });
+                    if (currentScroll > lastScrollTop && currentScroll > 10) {
+                        // Scrolling down, hide header
+                        header.style.top = '-90px'; // cache vers le haut
+                        setTimeout(fadeOutHeaderBackground, 10);
+                        aside.style.top = "7em";
+                    } 
 
+                    else if(currentScroll < lastScrollTop && currentScroll < 10) {
+                        // Scrolling up, show header
+                        header.style.top = '0';
+                        setTimeout(fadeInHeaderBackground, 10);
+                        aside.style.top = "12em";
+                    }
 
-      </script>
+                    if (currentScroll > lastScrollTop && currentScroll >= 4900) {
+                        // Scrolling down, hide header
+                        aside.style.height = "40%";
+                    } 
+
+                    else if (currentScroll < lastScrollTop && currentScroll < 4900) {
+                        // Scrolling down, hide header
+                        aside.style.height = "80%";
+                    } 
+
+                    
+
+                
+                    lastScrollTop = currentScroll;
+                });
+
+              </script>
       
 </html>
