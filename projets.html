@@ -75,7 +75,7 @@
                     
                     <p>
                         <strong>Points à retenir :</strong><br>
-                        + Travail de groupe réussi<br>
+                        + Travail de groupe <br>
                         + Réalisation dans les temps<br>
                         + Découverte de divers paradigmes de programmation
                     </p>
@@ -149,7 +149,7 @@
 
                     <p>
                         <strong>Points à retenir :</strong><br>
-                        + Travail de groupe efficace<br>
+                        + Ecoute des idées d'autrui au sein d'un groupe<br>
                         + Recherches et analyses enrichissantes<br>
                         – Réalisation incomplète, faute de temps
                     </p>
@@ -158,37 +158,120 @@
             </article>
 
             <article id="Snake">
-                <h2>Jeu de snake</h2>
+                <h2>Jeu de Snake</h2>
                 <section>
                     <p>
-                        Premier de projet de développement à L'IUT, en solo. Nous avons crée deux jeux de Snake. Le premier, était le jeu que tout le monde connais,
-                        a la différence qu'il y avait des obstacle comme si-dessous. Nous l'avons développer en début d'année scolaire 2024.
-                        Celui-ci a été coder en C avec aucune interface graphique (ormi le terminale). 
+                        Premier projet de développement à l'IUT, réalisé en solo. Dans le cadre de l'apprentissage de la compétence :
+                        <strong>Développer des applications informatiques simples</strong>, nous avons créé deux versions du jeu Snake.
+                        La première reprenait le classique que tout le monde connaît, avec la particularité d’ajouter des obstacles (comme visible ci-dessous).
+                        Ce projet a été développé au début de l’année scolaire 2024, en langage C, sans interface graphique (uniquement via le terminal).
                         <br>
-                        Le projet n'est pas forcément le plus dur que nous avons eu a faire, mais il restait très intérssant.
-                        En effet, nous avons appris a coder de manière plus proffessionel, plus de commentaire, mise en page selon les convensions
-                        et surtout une documentation doxygen.
-
+                        Ce n’était pas le projet le plus difficile, mais il s’est révélé très enrichissant. 
+                        Nous avons appris à coder de manière plus professionnelle : ajout de commentaires, mise en page suivant les conventions, et surtout, création d’une documentation avec Doxygen.
+                        Je réalisais régulièrement des sessions de test pour vérifier la robustesse de mon programme.
                     </p>
-                    
+
                     <div>
-                        <img alt="image du jeu" src="images/Snake/snakev3.png">
-                        <img alt="autre image du jeu" src="images/Snake/snakev3_2.png">
+                        <img alt="Image du jeu Snake" src="images/Snake/snakev3.png">
+                        <img alt="Autre image du jeu Snake" src="images/Snake/snakev3_2.png">
                     </div>
-                    
+
                     <p>
-                        Le second snake que nous avons eu a développer était autonome. Nous étions cette fois-ci en binome, et la nouvelle mission était de
-                        crée un serpent qui puisse de lui même trouvé les pommes et les manger en évitant les obstacle et calculant la distance la plus courte
-                        pour y aller. Nous étions noté sur le temps CPU et le nombre de déplacement.
-                        Plus complexe car nous avions rendu le code modulaire, et nous étions alors deux sur le projets. Premier projet de "vrai" programmation
-                        en groupe.
+                        Le second Snake que nous avons développé était autonome. Cette fois, nous étions en binôme. 
+                        La nouvelle mission consistait à créer un serpent capable de trouver les pommes et de les manger par lui-même,
+                        tout en évitant les obstacles et en calculant le chemin le plus court pour y parvenir. 
+                        Nous étions notés sur le temps CPU utilisé et le nombre de déplacements.
+                        <br>
+                        Ce projet était plus complexe, car nous avons rendu le code modulaire et nous devions travailler à deux.
+                        C’était notre premier véritable projet de programmation en groupe.
                     </p>
 
                     <p>
                         <strong>Points à retenir :</strong><br>
-                        + Qualité de developpement<br>
-                        + Apprentissage autonomie<br>
-                        + Respet des consigne & rendu dans les temps
+                        + Qualité du développement<br>
+                        + Découverte encadrée<br>
+                        + Respect des consignes & rendu dans les temps
+                    </p>
+                </section>
+            </article>
+
+            <article id="KNN">
+                <h2>KNN</h2>
+                <section>
+                    <p>
+                        Projet très peu visuel, car assez abstrait. Nous étions en trinôme, et notre mission consistait cette fois à
+                        créer un algorithme de KNN (K-Nearest Neighbors), ainsi qu’un autre basé sur K-Means, en Python.<br>
+                        J’ai été chargé de développer seul l’algorithme de KNN.<br>
+                        Pour expliquer rapidement : le KNN est un algorithme qui permet de "deviner" à quelle catégorie appartient une donnée
+                        en se basant sur ses voisines. Par exemple, si je mesure 1,65 m, l’algorithme pourrait conclure que je suis une femme…
+                        ce qui n’est pas forcément vrai. C’est une des limites de cet algorithme lorsqu’il est mal utilisé ou lorsque les données
+                        d’entrée ne sont pas bien choisies.<br>
+                        En informatique, on ne compare pas sur un simple plan 2D, mais dans un espace en n dimensions. Cela signifie qu’on peut
+                        comparer jusqu’à 150 critères différents : c’est là que réside toute la puissance de cet algorithme.
+                        <br><br>
+                        Ce projet nous a permis de développer notre capacité à <strong>appréhender et construire des algorithmes</strong>.
+                        La première chose que j’ai faite a été de générer un jeu de points dans un plan en deux dimensions, de manière à former
+                        trois groupes distincts (ou clusters) pour l’expérimentation.
+                    </p>
+
+                    <div>
+                        <img alt="Image d'un petit jeu de données" src="images/algo/data.png">
+                        <img alt="Image de la structure de l'algo" src="images/algo/structure.png">
+                    </div>
+                    <img alt="Image du jeu de données seul" src="images/algo/plan_vide.png">
+
+                    <p>
+                        À côté, on peut voir la structure générale du programme, suffisament commentée. Les détails techniques ne sont pas essentiels ici.
+                        L'idée est simple : on fournit à l’algorithme quelques données déjà étiquetées (par exemple "A", "B" et "C"),<br>
+                        puis on lui demande de classer 300 nouveaux points en fonction de leurs voisins (150 points ajoutés dans la capture ci-dessous).
+                    </p>
+
+                    <img alt="Image du résultat" src="images/algo/resultat.png">
+
+                    <p>
+                        <strong>Points à retenir :</strong><br>
+                        + Structurer un problème algorithmique<br>
+                        + Garder un regard critique sur les performances de son algorithme<br>
+                        + Réfléchir aux limites et applications des algorithmes dans le monde réel
+                    </p>
+                </section>
+            </article>
+
+
+            <article id="ICPT">
+                <h2>Créer un serveur</h2>
+                <section>
+                    <p>
+                        Ce projet s’inscrit dans le cadre d’une compétence critique étudiée en BUT Informatique : 
+                        <strong>installer et configurer un poste de travail.</strong><br>
+                        Nous étions deux à travailler sur ce projet.<br>
+                        Notre mission était d’installer un serveur sur une machine virtuelle. Ce projet d’IUT était assez particulier : 
+                        nous étions peu guidés et laissés en autonomie. Cela nous a poussés à faire de nombreuses recherches pour le mener à bien.
+                        <br>
+                        Nous avons commencé par configurer le serveur Apache2.
+                    </p>
+                    <img src="images/Installation_Serv/config_apache.png" alt="Installation d'Apache2 sur la VM">
+
+                    <p>
+                        Par la suite, nous nous sommes réparti le travail : mon binôme s’occupait de la partie SQL, et moi de la partie PHP.
+                        C’est là que les choses se sont complexifiées. Nous avions certaines contraintes, comme celle d’exécuter du code PHP dans des fichiers HTML.
+                        Il a donc fallu se renseigner sur les fichiers de configuration PHP dans lesquels ce type de paramètre pouvait être modifié.
+                    </p>
+                    <img src="images/Installation_Serv/config_match.png" alt="Modification d’un fichier de configuration PHP">
+
+                    <p>
+                        Pour terminer, nous devions réaliser un petit site comprenant une page de connexion, une base de données et une page dynamique.
+                        Le temps étant très limité, nous avons opté pour une solution simple : une page de connexion qui vérifie le mot de passe à l’aide d’un script PHP interrogeant une base de données minimaliste.
+                        Si le mot de passe est correct, l’utilisateur accède à une simple horloge réalisée en JavaScript.
+                    </p>
+
+                    <img src="images/Installation_Serv/connxion.png" alt="Page de connexion minimaliste">
+
+                    <p>
+                        <strong>Points à retenir :</strong><br>
+                        + Apprentissage en autonomie<br>
+                        + Prise d’initiative<br>
+                        - Un peu brouillon par moments, dû à une autonomie totale
                     </p>
                 </section>
             </article>
@@ -199,11 +282,11 @@
                     <li><a href="#Prevakia">Prevakia</a></li>
                     <li><a href="#Aora">Aora</a></li>
                     <li><a href="#Snake">Snake</a></li>
-                    <li><a href="#Snake">Docker</a></li>
                     <li><a href="#Snake">Site Jo</a></li>
-                    <li><a href="#Snake">Base de donnée</a></li>
+                    <li><a href="#KNN">KNN</a></li>
                     <li><a href="#Snake">Application Java</a></li>
                     <li><a href="#Snake">Moteur 3D</a></li>
+                    <li><a href="#ICPT">Mise en place d'un serveur</a></li>
                 </ul>
             </aside>
 

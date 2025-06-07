@@ -60,7 +60,7 @@
 .timeline-content > img{
     position: relative;
     left: 10%;
-    width: 230px;
+    width: 25vb;
     display: inline-block;
     border-radius: 15px;
 
@@ -81,8 +81,18 @@
     display: inline-block;
 }
 
-.timeline-content img{
-    width: 60%;
+@media only screen and (max-width: 1700px) {
+    .timeline-content {
+        
+        padding: 5px 10px;
+        padding-bottom: 3em;
+        height: 250px;
+    }
+
+    .timeline-content > img{
+        visibility:hidden;
+        width: 1px;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -90,9 +100,16 @@
         
         padding: 5px 10px;
         padding-bottom: 3em;
-        height: 100%;
+        height: 250px;
+    }
+
+    .timeline-content > img{
+        visibility:visible;
+        width: 25vb;
     }
 }
+
+
 @media only screen and (max-width: 450px) {
 
     .timeline {
@@ -122,4 +139,3 @@
     }
     
 }
-

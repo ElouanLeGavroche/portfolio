@@ -97,10 +97,6 @@ a{
     color: var(--text-color);
 }
 
-img{
-    width: 256px; 
-}
-
 figure img{
     width: 40%;
 }
@@ -231,14 +227,26 @@ main > section > article{
 ###################
 */
 
-article > span > div {
-    width: 30%;
-    height: 35%;
-    margin: 10px;
-}
-
 article > span > p{
     width: 100%;
+}
+
+article > span > div {
+    margin: 10px;
+
+    width: 100%;
+    background-image: url("images/tests/IMG_20250607_145303.jpg");
+    background-size: 100%;
+    background-repeat:repeat-x;
+    background-position-y: -4em ;
+    
+    background-position-x: center;
+    padding: 0  ;
+}
+
+
+article > span > div > img{
+    width: 256px;
 }
 
 section > article > span {
@@ -246,9 +254,7 @@ section > article > span {
     flex-wrap: wrap;
 }
 
-main > section > section > article > ul > li{
-    padding: 0.5em;
-}
+
 /*
 ###################
 #                 #
