@@ -105,5 +105,17 @@ header:hover::before{
     header p{
         display: none;
     }
+
+    header nav li {
+        padding: 1px;
+        margin: 2px;
+
+
+        width: 8em;
+        background-color: var(--main-color);
+        transition-duration: 0.4s;
+
+        box-shadow: 2px 2px 1px 1px var(--text-color);    
+    }
     
 }
