@@ -109,7 +109,7 @@ header:hover::before{
     header nav li {
         padding: 1px;
         margin: 5px;
-
+        margin-top: 1em;
 
         width: 8em;
         background-color: var(--main-color);

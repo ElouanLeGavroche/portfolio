@@ -300,12 +300,13 @@
 
             <article id="BDD">
                 <h2>Création de deux base de donnée</h2>
+                <h3><strong>PAS FINI</strong></h3>
                 <section>
                     <p>
                         Une partie des plus importantes de l'informatique est la data. Et la base de donnée permet justement de stocker
                         de manière intelligente la data de masse. C'est pourquoi on nous apprend a <strong>consevoir et mettre en place une base de données
                         a partir d'une cahier des charge du client</strong>. Le projet que nous avions eu étais donc de comprendre une besoin décrit par le client,
-                        c'était l'organisation d'un match de foot. Puis nous avions du le mettre au format UML, et en TutorialD par la suite.
+                        c'était l'organisation de championnat de foot. Puis nous avions du le mettre au format UML, et en TutorialD par la suite.
 
                     </p>
 
@@ -318,8 +319,8 @@
                     <p>
                         <strong>Points à retenir :</strong><br>
                         + Mise en place d'un besoin client<br>
-                        + <br>
-                        - Un peu brouillon par moments, dû à une autonomie totale
+                        + Modélisation d'un diagram au format UML<br>
+                        + Nouveau paradigme de la base de donnée
                     </p>
                 </section>
             </article>
@@ -451,9 +452,9 @@
 
                 window.addEventListener('scroll', () => {
                     let currentScroll = window.scrollY;
-                    var Lascreen=screen.availWidth;
+                    var Lascreen=window.innerWidth;
                     
-                    if (Lascreen >= 650){
+                    if (Lascreen >= 1300){
                         if (currentScroll > lastScrollTop && currentScroll > 10) {
                             // Scrolling down, hide header
                             header.style.top = '-90px'; // cache vers le haut
@@ -468,15 +469,6 @@
                             aside.style.top = "12em";
                         }
 
-                        if (currentScroll > lastScrollTop && currentScroll >= 4900) {
-                            // Scrolling down, hide header
-                            aside.style.height = "40%";
-                        } 
-
-                        else if (currentScroll < lastScrollTop && currentScroll < 4900) {
-                            // Scrolling down, hide header
-                            aside.style.height = "80%";
-                        } 
                     }
                 
                     lastScrollTop = currentScroll;
