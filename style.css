@@ -326,6 +326,13 @@ aside{
     }
 
 
+    main article{
+        box-shadow: 0 0 0;
+    }
+
+    main article:hover{
+        box-shadow: 0 0 0;
+    }
 
     header li{
         font-size:  89%;
@@ -357,6 +364,18 @@ aside{
         padding: 0.8em;
     }
 
+    footer > section > article:nth-child(1), footer > section > article:nth-child(2) > ul {
+        display:none;
+    }
+
+    aside{
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 80%;
+    z-index: 1;
+    transition-duration: 0.2s;
+    }
 
     
 }
