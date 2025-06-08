@@ -38,7 +38,7 @@
     padding: 10px 15px;
     border-radius: 15px;
     transition-duration: 0.2s;
-    height: 18em;
+    height: 100%;
 
 }
 
@@ -58,10 +58,9 @@
 }
 
 .timeline-content > img{
-    position: relative;
     left: 10%;
-    width: 25vb;
-    display: inline-block;
+    height: 60%;
+    width: 256px;
     border-radius: 15px;
 
 }
@@ -81,19 +80,8 @@
     display: inline-block;
 }
 
-@media only screen and (max-width: 1700px) {
-    .timeline-content {
-        
-        padding: 5px 10px;
-        padding-bottom: 3em;
-        height: 250px;
-    }
 
-    .timeline-content > img{
-        visibility:hidden;
-        width: 1px;
-    }
-}
+
 
 @media only screen and (max-width: 1300px) {
     .timeline-content {
