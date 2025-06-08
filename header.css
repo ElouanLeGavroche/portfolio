@@ -97,5 +97,13 @@ header:hover::before{
     #main-header.new-bg{
         background-image: none;
     }
+
+    header{
+        width: 100%;
+    }
+
+    header p{
+        display: none;
+    }
     
 }
