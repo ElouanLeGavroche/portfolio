@@ -244,9 +244,16 @@ article > span > div {
     padding: 0  ;
 }
 
+section > section > article > span > div{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
 
 article > span > div > img{
-    width: 256px;
+    width: 25%;
+    margin: 0;
+    height: 100%;
 }
 
 section > article > span {
@@ -356,7 +363,17 @@ aside{
         padding: 0;
         width: 100%;
         padding-top: 15em;
-    
+    }
+
+
+    section section article span, section section article h3, section section article h2, section section article p, section section article ul, section section article div{
+        width: 96%;
+        margin: 1em 2%;
+        padding: 0.5em;
+    }
+
+    p{
+        text-align: left;
     }
 
 
