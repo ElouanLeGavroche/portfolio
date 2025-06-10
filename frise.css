@@ -7,6 +7,9 @@
 #                 #
 ###################
 */
+#Frise{
+    height: 100%;
+}
 
 .timeline {
     position: relative;
@@ -14,6 +17,7 @@
     padding-left: 30px;
     border-left: 3px solid var(--ter-color);
     font-size: 130%;
+    
 }
 
 .timeline-item {
