@@ -39,8 +39,8 @@
                 <li><a href="#Snake">Snake</a></li>
                 <li><a href="#Jo">Site Jo</a></li>
                 <li><a href="#KNN">KNN</a></li>
-                <li><a href="#ICPT">Mise en place d'un serveur</a></li>
                 <li><a href="#BDD">Base de donnée</a></li>
+                <li><a href="#ICPT">Mise en place d'un serveur</a></li>
                 <li><a href="#HuelGoat">Sortie a Huel Goat</a></li>
             </ul>
         </aside>
@@ -299,28 +299,71 @@
             </article>
 
             <article id="BDD">
-                <h2>Création de deux base de donnée</h2>
-                <h3><strong>PAS FINI</strong></h3>
+                <h2>Création de deux bases de données</h2>
                 <section>
                     <p>
-                        Une partie des plus importantes de l'informatique est la data. Et la base de donnée permet justement de stocker
-                        de manière intelligente la data de masse. C'est pourquoi on nous apprend a <strong>consevoir et mettre en place une base de données
-                        a partir d'une cahier des charge du client</strong>. Le projet que nous avions eu étais donc de comprendre une besoin décrit par le client,
-                        c'était l'organisation de championnat de foot. Puis nous avions du le mettre au format UML, et en TutorialD par la suite.
-
+                        L’un des éléments les plus importants en informatique est la donnée. Une base de données permet justement de stocker
+                        ces données de manière structurée et intelligente. C’est pourquoi on nous apprend à <strong>concevoir et mettre en place une base de données
+                        à partir d’un cahier des charges fourni par le client</strong>. Le projet qui nous a été confié consistait à analyser un besoin exprimé par un client :
+                        l’organisation d’un championnat de football. Nous avons d’abord modélisé ce besoin sous forme de diagrammes UML, avant de le
+                        traduire en langage TutorialD. Ce travail nous a permis de comprendre les étapes nécessaires pour répondre efficacement à un besoin client.
                     </p>
+                    
+                    <div>
+                        <img src="images/bdd/Class_Diagram_Football.jpg" alt="diagramme de classe">
+                        <img src="images/bdd/Capture d’écran 2025-06-10 172909.png" alt="Besoin client">
+                    </div>
 
                     <p>
-                        Nous avions eu un second projet au second semetre. Celui-ci ne nous demandais pas de comprendre le besoin client, mais simplement de crée le 
-                        script PostgreSql a partir d'un diagram UML. Par la suite nous l'avons peuplé. <br>
-                        Pour finir nous avions divers missions qui nous demandais de faire des statistique grâce a python sur la base de donnée.
+                        Un second projet, réalisé au deuxième semestre, ne nécessitait pas de compréhension du besoin client. Il s’agissait simplement de créer
+                        un script PostgreSQL à partir d’un diagramme UML déjà fourni. Nous avons ensuite peuplé la base de données avec des données fictives.<br>
+                        Pour terminer, différentes missions nous ont été proposées afin de réaliser des statistiques en Python à partir de la base de données.
+                        Cela nous a permis d’apprendre à exploiter concrètement une base de données dans un contexte applicatif réel.
                     </p>
 
                     <p>
                         <strong>Points à retenir :</strong><br>
-                        + Mise en place d'un besoin client<br>
-                        + Modélisation d'un diagram au format UML<br>
-                        + Nouveau paradigme de la base de donnée
+                        + Mise en place d’un besoin client<br>
+                        + Modélisation en diagramme UML<br>
+                        + Découverte d’un nouveau paradigme de base de données
+                    </p>
+                </section>
+            </article>
+
+            <article id="ICPT">
+                <h2>Créer un serveur</h2>
+                <section>
+                    <p>
+                        Ce projet s’inscrit dans le cadre d’une compétence critique étudiée en BUT Informatique : 
+                        <strong>installer et configurer un poste de travail.</strong><br>
+                        Nous étions deux à travailler sur ce projet.<br>
+                        Notre mission était d’installer un serveur sur une machine virtuelle. Ce projet d’IUT était assez particulier : 
+                        nous étions peu guidés et laissés en autonomie. Cela nous a poussés à faire de nombreuses recherches pour le mener à bien.
+                        <br>
+                        Nous avons commencé par configurer le serveur Apache2.
+                    </p>
+                    <img src="images/Installation_Serv/config_apache.png" alt="Installation d'Apache2 sur la VM" width="80%">
+
+                    <p>
+                        Par la suite, nous nous sommes réparti le travail : mon binôme s’occupait de la partie SQL, et moi de la partie PHP.
+                        C’est là que les choses se sont complexifiées. Nous avions certaines contraintes, comme celle d’exécuter du code PHP dans des fichiers HTML.
+                        Il a donc fallu se renseigner sur les fichiers de configuration PHP dans lesquels ce type de paramètre pouvait être modifié.
+                    </p>
+                    <img src="images/Installation_Serv/config_match.png" alt="Modification d’un fichier de configuration PHP">
+
+                    <p>
+                        Pour terminer, nous devions réaliser un petit site comprenant une page de connexion, une base de données et une page dynamique.
+                        Le temps étant très limité, nous avons opté pour une solution simple : une page de connexion qui vérifie le mot de passe à l’aide d’un script PHP interrogeant une base de données minimaliste.
+                        Si le mot de passe est correct, l’utilisateur accède à une simple horloge réalisée en JavaScript.
+                    </p>
+
+                    <img src="images/Installation_Serv/connxion.png" alt="Page de connexion minimaliste">
+
+                    <p>
+                        <strong>Points à retenir :</strong><br>
+                        + Apprentissage en autonomie<br>
+                        + Prise d’initiative<br>
+                        - Un peu brouillon par moments, dû à une autonomie totale
                     </p>
                 </section>
             </article>
@@ -393,45 +436,6 @@
                     </p>
                 </section>
             </article>
-
-            <article id="ICPT">
-                <h2>Créer un serveur</h2>
-                <section>
-                    <p>
-                        Ce projet s’inscrit dans le cadre d’une compétence critique étudiée en BUT Informatique : 
-                        <strong>installer et configurer un poste de travail.</strong><br>
-                        Nous étions deux à travailler sur ce projet.<br>
-                        Notre mission était d’installer un serveur sur une machine virtuelle. Ce projet d’IUT était assez particulier : 
-                        nous étions peu guidés et laissés en autonomie. Cela nous a poussés à faire de nombreuses recherches pour le mener à bien.
-                        <br>
-                        Nous avons commencé par configurer le serveur Apache2.
-                    </p>
-                    <img src="images/Installation_Serv/config_apache.png" alt="Installation d'Apache2 sur la VM" width="80%">
-
-                    <p>
-                        Par la suite, nous nous sommes réparti le travail : mon binôme s’occupait de la partie SQL, et moi de la partie PHP.
-                        C’est là que les choses se sont complexifiées. Nous avions certaines contraintes, comme celle d’exécuter du code PHP dans des fichiers HTML.
-                        Il a donc fallu se renseigner sur les fichiers de configuration PHP dans lesquels ce type de paramètre pouvait être modifié.
-                    </p>
-                    <img src="images/Installation_Serv/config_match.png" alt="Modification d’un fichier de configuration PHP">
-
-                    <p>
-                        Pour terminer, nous devions réaliser un petit site comprenant une page de connexion, une base de données et une page dynamique.
-                        Le temps étant très limité, nous avons opté pour une solution simple : une page de connexion qui vérifie le mot de passe à l’aide d’un script PHP interrogeant une base de données minimaliste.
-                        Si le mot de passe est correct, l’utilisateur accède à une simple horloge réalisée en JavaScript.
-                    </p>
-
-                    <img src="images/Installation_Serv/connxion.png" alt="Page de connexion minimaliste">
-
-                    <p>
-                        <strong>Points à retenir :</strong><br>
-                        + Apprentissage en autonomie<br>
-                        + Prise d’initiative<br>
-                        - Un peu brouillon par moments, dû à une autonomie totale
-                    </p>
-                </section>
-            </article>
-
 
             <script>
                 let lastScrollTop = 0;

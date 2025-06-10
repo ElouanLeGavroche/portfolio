@@ -57,7 +57,7 @@
     
 }
 
-.timeline-content > img{
+.timeline-content img{
     left: 10%;
     height: 60%;
     width: 256px;
@@ -65,6 +65,9 @@
 
 }
 
+#Frise img{
+    border-radius: 15px;
+}
 
 .timeline-content:hover #dess{
     display: inline-block;

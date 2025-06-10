@@ -77,6 +77,7 @@ body{
 p{
     text-align: justify;
 }
+
 div > p {
     text-align: start;
 }
@@ -95,7 +96,14 @@ h1{
     color: var(--text-color);
 }
 
-a{
+
+p a:hover, main li a:hover{
+    text-decoration:underline;
+    color: var(--ter-color);
+    font-style:oblique;
+}
+
+a, header ul li a, p a, li a{
     text-decoration: none;
     color: var(--text-color);
 }
