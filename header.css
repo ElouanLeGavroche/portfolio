@@ -53,6 +53,7 @@ header{
     text-align: center;
     overflow: hidden;
     z-index: 1;
+    line-height:initial;
     /*background: linear-gradient(to top, var(--header-color1), 96%, var(--header-color2));*/
     
 }

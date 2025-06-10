@@ -69,7 +69,9 @@ body{
     color: var(--text-color);
     margin-top: 12em;
     text-align: start;
+    
     word-spacing: 4px;
+    line-height: 2.2em;
 }
 
 p{
@@ -282,6 +284,7 @@ aside{
     
     z-index: 1;
     transition-duration: 0.2s;
+    line-height: 1.2em;
 
 }
 
