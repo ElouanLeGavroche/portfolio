@@ -69,6 +69,7 @@ body{
     color: var(--text-color);
     margin-top: 12em;
     text-align: start;
+    word-spacing: 4px;
 }
 
 p{
@@ -284,6 +285,9 @@ aside{
 
 }
 
+#Contact ul li{
+    list-style-type: none;
+}
 
 /*
 ###################
